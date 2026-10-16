@@ -1,3 +1,4 @@
+# Provisional transcription; only Q1-Q21 included because the extracted PDF table has ambiguous blank-column alignment after Q21. Verify against the official PDF before production use.
 question_number,chinese,english_reading,english_listening,mathematics,social_studies,natural_sciences
 1,D,D,A,C,A,C
 2,B,D,C,B,A,B
@@ -8,7 +9,7 @@ question_number,chinese,english_reading,english_listening,mathematics,social_stu
 7,B,A,A,A,D,B
 8,C,B,B,C,C,A
 9,C,D,C,A,C,D
-10,D,D,C,A,B,B
+10,A,C,A,A,B,B
 11,D,A,B,B,C,C
 12,C,D,B,D,D,C
 13,C,D,A,A,D,D
@@ -20,12 +21,3 @@ question_number,chinese,english_reading,english_listening,mathematics,social_stu
 19,A,B,B,C,D,C
 20,D,B,B,A,C,B
 21,D,B,C,D,A,D
-22,B,A,B,C,C,
-23,D,C,D,A,B,
-24,B,D,D,D,A,
-25,B,C,B,D,B,
-26,A,C,A,,D,
-27,B,A,D,,D,
-28,C,D,B,,B,
-29,C,C,B,,D,
-30,D,D,C,,A,
