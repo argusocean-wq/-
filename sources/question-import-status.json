@@ -157,7 +157,14 @@
       "importedByThisToolThisRound": 0,
       "skippedRecordsCount": null,
       "skippedRecordsCountNote": "尚未取得可解析的完整來源 payload，不能可靠計算各題權利狀態或略過題數。",
-      "meaning": "已建立權利明確清除才可輸出的匯入閘門；本輪沒有新增題目紀錄。"
+      "meaning": "已建立權利明確清除才可輸出的匯入閘門；本輪沒有新增題目紀錄。",
+      "requiredEvidenceFields": [
+        "rightsEvidence.basis",
+        "rightsEvidence.evidenceUrl",
+        "rightsEvidence.reviewedAt",
+        "rightsEvidence.reviewer"
+      ],
+      "note": "僅 rightsStatus=cleared 且 rightsEvidence 四欄完整才可通過；本輪沒有完整來源 payload，新增題目紀錄仍為 0。"
     }
   },
   "yearStatus": [
