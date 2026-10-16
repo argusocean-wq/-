@@ -65,6 +65,12 @@
       "completed": 1,
       "total": 26,
       "percent": 3.85
+    },
+    "secondaryDatasetRegistered2026Math": {
+      "completed": 1,
+      "total": 1,
+      "percent": 100,
+      "meaning": "dataset source metadata registered only; not a question-content import"
     }
   },
   "yearStatus": [
@@ -94,7 +100,8 @@
     "Partial question records are tracked separately and do not count as a complete subject question set.",
     "Overall target includes all historical junior-high Basic Competency Tests (ROC 90-102) and CAP exams (ROC 103-115).",
     "Do not calculate a complete historical question-bank percentage from the earlier 14-item 2025-2026 scope.",
-    "Previously imported 2026 math records remain unverified draft records until question numbers, wording, figures, and official answers are reconciled."
+    "Previously imported 2026 math records remain unverified draft records until question numbers, wording, figures, and official answers are reconciled.",
+    "Registering a secondary dataset or source links does not count as question text import, official verification, or rights clearance."
   ],
   "historicalCoverageManifest": "sources/historical-exam-coverage.json"
 }
