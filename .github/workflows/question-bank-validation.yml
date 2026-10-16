@@ -1,0 +1,28 @@
+name: Question Bank Validation
+
+on:
+  push:
+    branches:
+      - feature/question-bank-import
+  pull_request:
+    branches:
+      - feature/question-bank-import
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-question-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test rights-clearance import gate
+        run: node --test scripts/test-import-rights-cleared-questions.mjs
+      - name: Validate existing 115 Math draft structure
+        run: node scripts/validate-question-batch.mjs data/questions/2026/mathematics/115-mathematics-full.json
