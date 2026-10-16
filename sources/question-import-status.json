@@ -38,6 +38,11 @@
       "rowsTranscribed": 21,
       "verified": false,
       "countsAsQuestionImport": false
+    },
+    "officialDirectFileLinks2026": {
+      "completed": 8,
+      "total": 8,
+      "percent": 100
     }
   },
   "yearStatus": [
@@ -53,7 +58,8 @@
       "sourceRegistry": "sources/2026-cap-115-sources.json",
       "sourceItems": 7,
       "questionSetsTranscribed": 0,
-      "status": "official_archive_entry_identified_not_transcribed"
+      "status": "official_year_page_and_8_direct_file_links_verified_not_transcribed",
+      "directFilesVerified": 8
     }
   ],
   "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
