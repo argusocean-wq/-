@@ -89,6 +89,13 @@
       "total": 13,
       "percent": 100,
       "meaning": "source entries catalogued across 3 years; not question-content imports"
+    },
+    "nextFullPaperBatch": {
+      "target": "cap-114-chinese",
+      "completed": 0,
+      "total": 1,
+      "percent": 0,
+      "reason": "Full exam.json payload is not accessible through current connector; source metadata confirmed, question content not imported"
     }
   },
   "yearStatus": [
