@@ -145,3 +145,12 @@
 - 新增回歸測試 `scripts/test-import-rights-cleared-questions.mjs`，涵蓋：完整證據才匯入、權利狀態缺漏／限制時略過、證據網址或日期格式錯誤時不輸出。執行方式：`node --test scripts/test-import-rights-cleared-questions.mjs`。目前只確認測試檔已提交；由於此工作階段無法在你的 GitHub 執行環境直接執行 Node 測試，測試結果尚未宣稱通過。
 
 - 新增 `.github/workflows/question-bank-validation.yml`：在推送到 `feature/question-bank-import`、對該分支建立 PR，或手動觸發時，自動執行權利閘門回歸測試與 115 數學草稿結構驗證。工作流程檔已從 GitHub 重新讀取確認；目前尚未取得 Actions 執行結果，因此不能宣稱 CI 已通過。
+
+
+## 逐題來源標註加固（2026-10-17）
+
+- 已更新 `data/questions/2026/mathematics/115-mathematics-full.json`：第 1–27 題每一筆都新增 `sourceCitation`，包含官方數學試題本 URL、該題題號定位、官方年度索引、次級結構化資料來源及固定 commit。
+- 原本缺少 `sourceUrl` 的第 16–27 題已補上官方整卷試題本連結；目前 `sourceUrl` 覆蓋 27/27（100%），`sourceCitation` 覆蓋 27/27（100%）。
+- 題目定位目前以「第 N 題；頁碼尚待逐題核對」標記，避免虛構 PDF 頁碼。每題來源標註不等於該題文字、圖表或答案已與官方原件核實。
+- 更新 `scripts/validate-question-batch.mjs`：往後每筆題目都必須具備 `sourceCitation.primarySource.url` 及非空的 `sourceCitation.primarySource.locator`；缺少來源時驗證失敗。
+- 本次新增的是來源引用 metadata 與驗證規則，不是新題目內容。多科目 208 題批次的首次轉錄仍為 27/208（12.98%），待首次轉錄 181/208（87.02%）；逐題官方核實仍為 0/208（0%），待核實 208/208（100%）。全歷屆總題數仍待盤點。
