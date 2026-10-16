@@ -60,7 +60,10 @@
   ["外部連結安全屬性",()=>[...document.querySelectorAll('a[target="_blank"]')].every(a=>a.rel.includes("noopener"))],
   ["行動版 viewport 已設定",()=>!!document.querySelector('meta[name="viewport"]')],
   ["測試按鈕可互動",()=>!!document.querySelector("#run-tests")&&!!document.querySelector("#reset-tests")],
-  ["無水平溢出（目前視窗）",()=>document.documentElement.scrollWidth<=window.innerWidth+1]
+  ["無水平溢出（目前視窗）",()=>document.documentElement.scrollWidth<=window.innerWidth+1],
+  ["桌面版四欄斷點",()=>[...document.styleSheets].some(s=>{try{return [...s.cssRules].some(r=>r.cssText.includes("grid-template-columns: repeat(4"))}catch(e){return false}})],
+  ["手機版單欄與觸控區",()=>[...document.styleSheets].some(s=>{try{return [...s.cssRules].some(r=>r.cssText.includes("max-width: 680px")&&r.cssText.includes("min-height: 44px"))}catch(e){return false}})],
+  ["尊重減少動態效果設定",()=>[...document.styleSheets].some(s=>{try{return [...s.cssRules].some(r=>r.cssText.includes("prefers-reduced-motion"))}catch(e){return false}})]
  ];
  function run(){
   const host=document.querySelector("#test-results");host.replaceChildren();let passed=0;
