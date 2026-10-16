@@ -24,7 +24,8 @@
       "題目文字與選項轉錄完成不等於官方核實完成",
       "答案鍵需與官方答案核對；解析缺失時留空，不猜答案",
       "圖片不是純文字題的阻塞條件；圖像題可以先保留有來源的 asset reference 並標記待補圖",
-      "正式發布前完成來源權利審查"
+      "正式發布前完成來源權利審查",
+      "先使用 metadata-only audit 檢查來源 bundle 結構與題數；在確認來源條款／重製權利前，不將完整受保護題幹、選項、閱讀文章或圖像描述複製進公開倉庫。"
     ]
   },
   "queue": [
@@ -80,8 +81,8 @@
       "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/exam.json",
       "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/grading.json",
       "textPriority": "medium",
-      "status": "source_bundle_confirmed_question_payload_not_imported",
-      "notes": "Bundle includes many figure assets; import plain-text stems/options first while preserving figure placeholders and asset paths. Question count follows source grading metadata.",
+      "status": "source_bundle_structure_confirmed_payload_not_imported_rights_review_pending",
+      "notes": "公開提交 diff 可見結構化 exam.json 與 54 題題目結構；仍未匯入題目文字。先執行 metadata-only 稽核，並完成官方題本對照及重製權利審查。",
       "existingDraftRecords": 0,
       "firstTranscriptionRemaining": 54,
       "firstTranscriptionCompletePercent": 0,
