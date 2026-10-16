@@ -39,7 +39,15 @@
       "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-english-reading/bundle/grading.json",
       "textPriority": "high",
       "status": "source_bundle_confirmed_question_payload_not_imported",
-      "notes": "Commit page confirms exam.json and grading.json; metadata states 43 multiple-choice questions. Complete JSON payload still needs to be retrieved before question import."
+      "notes": "Commit page confirms exam.json and grading.json; metadata states 43 multiple-choice questions. Complete JSON payload still needs to be retrieved before question import.",
+      "existingDraftRecords": 0,
+      "firstTranscriptionRemaining": 43,
+      "firstTranscriptionCompletePercent": 0,
+      "firstTranscriptionRemainingPercent": 100,
+      "verificationCompleted": 0,
+      "verificationRemaining": 43,
+      "verificationCompletePercent": 0,
+      "verificationRemainingPercent": 100
     },
     {
       "id": "cap-114-chinese",
@@ -52,7 +60,15 @@
       "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/grading.json",
       "textPriority": "high",
       "status": "source_bundle_confirmed_question_payload_not_imported",
-      "notes": "Commit page confirms exam.json and grading.json. 42-question count is from source grading metadata; image-heavy items should retain asset references."
+      "notes": "Commit page confirms exam.json and grading.json. 42-question count is from source grading metadata; image-heavy items should retain asset references.",
+      "existingDraftRecords": 0,
+      "firstTranscriptionRemaining": 42,
+      "firstTranscriptionCompletePercent": 0,
+      "firstTranscriptionRemainingPercent": 100,
+      "verificationCompleted": 0,
+      "verificationRemaining": 42,
+      "verificationCompletePercent": 0,
+      "verificationRemainingPercent": 100
     },
     {
       "id": "cap-114-social",
@@ -65,7 +81,15 @@
       "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/grading.json",
       "textPriority": "medium",
       "status": "source_bundle_confirmed_question_payload_not_imported",
-      "notes": "Bundle includes many figure assets; import plain-text stems/options first while preserving figure placeholders and asset paths. Question count follows source grading metadata."
+      "notes": "Bundle includes many figure assets; import plain-text stems/options first while preserving figure placeholders and asset paths. Question count follows source grading metadata.",
+      "existingDraftRecords": 0,
+      "firstTranscriptionRemaining": 54,
+      "firstTranscriptionCompletePercent": 0,
+      "firstTranscriptionRemainingPercent": 100,
+      "verificationCompleted": 0,
+      "verificationRemaining": 54,
+      "verificationCompletePercent": 0,
+      "verificationRemainingPercent": 100
     },
     {
       "id": "cap-115-chinese",
@@ -78,7 +102,15 @@
       "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-chinese/bundle/grading.json",
       "textPriority": "high",
       "status": "source_bundle_confirmed_question_payload_not_imported",
-      "notes": "Commit page reports 42 multiple-choice questions and lists image assets. Plain-text stems, options and reading passages are priority; figure-based questions can retain asset references."
+      "notes": "Commit page reports 42 multiple-choice questions and lists image assets. Plain-text stems, options and reading passages are priority; figure-based questions can retain asset references.",
+      "existingDraftRecords": 0,
+      "firstTranscriptionRemaining": 42,
+      "firstTranscriptionCompletePercent": 0,
+      "firstTranscriptionRemainingPercent": 100,
+      "verificationCompleted": 0,
+      "verificationRemaining": 42,
+      "verificationCompletePercent": 0,
+      "verificationRemainingPercent": 100
     },
     {
       "id": "cap-115-math",
@@ -91,7 +123,15 @@
       "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/grading.json",
       "textPriority": "medium",
       "status": "existing_draft_27_records_pending_official_reconciliation",
-      "notes": "Repository already contains 27 draft records; do not duplicate. Prioritize textual accuracy and mark diagram-dependent items for official PDF reconciliation."
+      "notes": "Repository already contains 27 draft records; do not duplicate. Prioritize textual accuracy and mark diagram-dependent items for official PDF reconciliation.",
+      "existingDraftRecords": 27,
+      "firstTranscriptionRemaining": 0,
+      "firstTranscriptionCompletePercent": 100,
+      "firstTranscriptionRemainingPercent": 0,
+      "verificationCompleted": 0,
+      "verificationRemaining": 27,
+      "verificationCompletePercent": 0,
+      "verificationRemainingPercent": 100
     }
   ],
   "metrics": {
@@ -101,7 +141,19 @@
     "questionRecordsVerifiedByThisBatch": 0,
     "importPercent": null,
     "verificationPercent": null,
-    "note": "208 is the sum of source-reported question counts across queued bundles, not the number imported. No content is counted as imported until complete source payload is available and parsed."
+    "note": "208 is the sum of source-reported question counts across queued bundles, not the number imported. No content is counted as imported until complete source payload is available and parsed.",
+    "totalQuestionsInCurrentBatch": 208,
+    "existingDraftRecordsInCurrentBatch": 27,
+    "firstTranscriptionRemaining": 181,
+    "firstTranscriptionCompletePercent": 12.98,
+    "firstTranscriptionRemainingPercent": 87.02,
+    "officialVerificationCompleted": 0,
+    "officialVerificationRemaining": 208,
+    "officialVerificationCompletePercent": 0,
+    "officialVerificationRemainingPercent": 100,
+    "globalHistoricalCAPQuestionTotal": null,
+    "globalHistoricalCAPRemainingPercent": null,
+    "globalTotalNote": "全歷屆各年度各科題數尚未完成盤點；208 僅為目前批次，不代表全歷屆總量。"
   },
   "blockers": [
     "Current GitHub connector writes files to the target repository but does not retrieve full Hugging Face exam.json payloads.",
