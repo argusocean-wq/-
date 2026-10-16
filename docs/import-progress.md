@@ -154,3 +154,9 @@
 - 題目定位目前以「第 N 題；頁碼尚待逐題核對」標記，避免虛構 PDF 頁碼。每題來源標註不等於該題文字、圖表或答案已與官方原件核實。
 - 更新 `scripts/validate-question-batch.mjs`：往後每筆題目都必須具備 `sourceCitation.primarySource.url` 及非空的 `sourceCitation.primarySource.locator`；缺少來源時驗證失敗。
 - 本次新增的是來源引用 metadata 與驗證規則，不是新題目內容。多科目 208 題批次的首次轉錄仍為 27/208（12.98%），待首次轉錄 181/208（87.02%）；逐題官方核實仍為 0/208（0%），待核實 208/208（100%）。全歷屆總題數仍待盤點。
+
+
+## 次級資料集權利狀態補充（2026-10-17）
+
+- 檢視 `JacobLinCool/taiwan-exams` 的公開提交紀錄時，發現提交 `74ba98d4978f58ba9fba054f2a719f75e7f029c1` 的說明為移除資料集卡片中的版權註記；這不是重製授權證明。來源：<https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/74ba98d4978f58ba9fba054f2a719f75e7f029c1>。
+- 因此，次級資料集只可作為來源追查線索；未取得適用於題目內容及本題庫用途的明確授權證據前，不將該資料集的完整題幹、選項、閱讀文章或圖像描述複製進公開題庫。逐題來源標註仍保留官方原卷連結與次級資料集固定版本，以利追溯。
