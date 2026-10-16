@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-17",
+  "scope": {
+    "description": "本輪已建立來源登記的 2025 與 2026 年七科追蹤項目；不是整個歷屆題庫的總量。",
+    "years": [
+      2025,
+      2026
+    ],
+    "trackedItems": 14,
+    "subjectIds": [
+      "chinese",
+      "english",
+      "english-listening",
+      "mathematics",
+      "social-studies",
+      "natural-sciences",
+      "writing"
+    ]
+  },
+  "metrics": {
+    "sourceRecords": {
+      "completed": 14,
+      "total": 14,
+      "percent": 100
+    },
+    "questionContentImported": {
+      "completed": 0,
+      "total": 14,
+      "percent": 0
+    },
+    "rightsAndSourceVerified": {
+      "completed": 0,
+      "total": 14,
+      "percent": 0
+    },
+    "answerKeyTranscription2025": {
+      "rowsTranscribed": 21,
+      "verified": false,
+      "countsAsQuestionImport": false
+    }
+  },
+  "yearStatus": [
+    {
+      "year": 2025,
+      "sourceRegistry": "sources/2025-cap-sources.json",
+      "sourceItems": 7,
+      "questionSetsTranscribed": 0,
+      "status": "source_links_only"
+    },
+    {
+      "year": 2026,
+      "sourceRegistry": "sources/2026-cap-115-sources.json",
+      "sourceItems": 7,
+      "questionSetsTranscribed": 0,
+      "status": "official_archive_entry_identified_not_transcribed"
+    }
+  ],
+  "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
+  "rules": [
+    "Source links and answer-key transcription do not count as full question-content import.",
+    "Do not publish question content until source, rights, and answer verification are complete.",
+    "Recalculate percentages whenever the audited scope changes."
+  ]
+}
