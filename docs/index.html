@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>會考題庫｜CAP Question Bank</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#121a2b;--line:#28354a;--text:#eef3ff;--muted:#a9b6cc;--accent:#8bb7ff;--soft:#1b2940}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 500px at 10% -15%,#203c67 0,transparent 65%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{padding:28px 18px 22px;border-bottom:1px solid var(--line)}.wrap{max-width:980px;margin:auto}h1{font-size:clamp(1.65rem,5vw,2.5rem);line-height:1.2;margin:8px 0}p{color:var(--muted);margin:.45rem 0}.tag{display:inline-block;color:var(--accent);border:1px solid #39557d;border-radius:999px;padding:3px 10px;font-size:.82rem}
+main{max-width:980px;margin:22px auto;padding:0 16px 60px}.filters,.status,.question{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}label{display:block;color:var(--muted);font-size:.9rem;margin-bottom:5px}select,input,button{font:inherit;color:var(--text);background:#0c1322;border:1px solid #34445e;border-radius:10px;padding:10px;width:100%}button{cursor:pointer;background:var(--soft);font-weight:650}button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.status{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.count{font-weight:700}.question h2{font-size:1.1rem;margin:0 0 8px}.qhead{display:flex;justify-content:space-between;gap:12px;align-items:center}.qnum{color:var(--accent);font-weight:700}.options{list-style:none;padding:0;margin:12px 0}.options li{padding:9px 11px;margin:7px 0;border:1px solid var(--line);border-radius:10px;background:#0e1626}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.meta a,.meta span{font-size:.84rem;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:4px 8px;text-decoration:none}.warning{border-left:3px solid #d9a441;padding-left:10px;color:#e8d6a7;font-size:.9rem}.empty{text-align:center;padding:30px;color:var(--muted)}footer{max-width:980px;padding:0 16px 30px;margin:auto;color:var(--muted);font-size:.85rem}
+@media(max-width:650px){.filters{grid-template-columns:1fr}.question{padding:13px}.qhead{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="tag">CAP · 會考練習</span><h1>國中教育會考題庫</h1><p>按年度與科目查找題目；每題提供來源連結與核實狀態。</p></div></header>
+<main>
+<section class="filters" aria-label="題目篩選">
+<div><label for="year">年度</label><select id="year"><option value="all">所有已載入年度</option></select></div>
+<div><label for="subject">科目</label><select id="subject"><option value="all">所有科目</option></select></div>
+<div><label for="search">搜尋題幹</label><input id="search" type="search" placeholder="輸入關鍵字…"></div>
+</section>
+<section class="status"><div><div class="count" id="count">正在載入題庫索引…</div><p id="statusText">載入可用的題目資料</p></div><button id="reset" type="button" style="width:auto">清除篩選</button></section>
+<div id="results" aria-live="polite"><div class="question">正在讀取題目資料…</div></div>
+</main>
+<footer>題目與答案可能仍在草稿或核實階段。來源標註不等於取得重製授權；正式公開前須完成來源權利審查。</footer>
+<script>
+const INDEX_URL = "../sources/text-first-multi-subject-batch.json";
+const MATH_URL = "../data/questions/2026/mathematics/115-mathematics-full.json";
+const state={papers:[],error:""};
+const $=id=>document.getElementById(id);
+const text=(v)=>typeof v==="string"?v:"";
+function normalize(paper){return (paper.questions||[]).map(q=>({...q,_exam:paper.exam,_source:paper.source||{}}))}
+function optionsFor(q){if(Array.isArray(q.options))return q.options.map((o,i)=>({id:o.id||String.fromCharCode(65+i),text:o.text||""}));if(q.options&&typeof q.options==="object")return Object.entries(q.options).map(([id,t])=>({id,text:String(t)}));return []}
+function subjectName(v){return ({mathematics:"數學",chinese:"國文",english:"英語", "english-reading":"英語閱讀","social-studies":"社會",science:"自然"})[v]||v||"未分類"}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function populateFilters(){const years=[...new Set(state.papers.map(p=>String(p.exam?.rocYear||"")).filter(Boolean))].sort((a,b)=>Number(b)-Number(a));const subs=[...new Set(state.papers.map(p=>p.exam?.subject).filter(Boolean))];$("year").innerHTML='<option value="all">所有已載入年度</option>'+years.map(y=>'<option value="'+y+'">民國 '+y+' 年</option>').join("");$("subject").innerHTML='<option value="all">所有科目</option>'+subs.map(s=>'<option value="'+escapeHtml(s)+'">'+escapeHtml(subjectName(s))+'</option>').join("")}
+function render(){const year=$("year").value,subject=$("subject").value,query=$("search").value.trim().toLocaleLowerCase();let rows=state.papers.flatMap(p=>normalize(p)).filter(q=>(year==="all"||String(q._exam?.rocYear)===year)&&(subject==="all"||q._exam?.subject===subject)&&(!query||[q.question,q.prompt,q.passage,q.explanation].filter(Boolean).join(" ").toLocaleLowerCase().includes(query)));$("count").textContent='顯示 '+rows.length+' 題';$("statusText").textContent=state.error||'題目依目前載入的資料檔呈現；草稿不代表官方已核實。';if(!rows.length){$("results").innerHTML='<div class="question empty">目前沒有符合條件的題目。此網站只會顯示已納入的資料，不會自行編造缺失題目。</div>';return}
+$("results").innerHTML=rows.map(q=>{const source=q.sourceCitation?.primarySource?.url||q.sourceUrl||q._source?.officialQuestionPaper||"";const prompt=q.question||q.prompt||"（此題尚無題幹文字）";const opts=optionsFor(q);const verified=(q.answerVerificationStatus==="officially_verified"||q.verificationStatus==="officially_verified");return '<article class="question"><div class="qhead"><span class="qnum">第 '+escapeHtml(q.number??"?")+' 題</span><span class="tag">'+(verified?"官方答案已核實":"草稿／待核實")+'</span></div><h2>'+escapeHtml(prompt)+'</h2>'+(q.passage?'<p>'+escapeHtml(q.passage)+'</p>':"")+(opts.length?'<ul class="options">'+opts.map(o=>'<li><strong>'+escapeHtml(o.id)+'.</strong> '+escapeHtml(o.text)).join("")+'</ul>':"")+(q.figureDescription?'<p class="warning">圖示說明：'+escapeHtml(q.figureDescription)+'</p>':"")+'<div class="meta"><span>民國 '+escapeHtml(q._exam?.rocYear??"?")+' 年 · '+escapeHtml(subjectName(q._exam?.subject))+'</span>'+(source?'<a href="'+escapeHtml(source)+'" target="_blank" rel="noopener noreferrer">開啟題目來源 ↗</a>':"")+'<span>來源定位：'+escapeHtml(q.sourceCitation?.primarySource?.locator||("第 "+(q.number??"?")+" 題；頁碼待核對"))+'</span></div></article>'}).join("")}
+async function load(){try{const [indexRes,mathRes]=await Promise.all([fetch(INDEX_URL),fetch(MATH_URL)]);if(!indexRes.ok)throw new Error("無法載入批次索引（HTTP "+indexRes.status+"）");if(!mathRes.ok)throw new Error("無法載入數學題庫（HTTP "+mathRes.status+"）");const index=await indexRes.json();const math=await mathRes.json();state.papers=[math];state.error='目前先載入 115 年數學科；其他科目會在資料完成轉錄與權利審查後逐步加入。';populateFilters();render()}catch(e){state.error="題庫載入失敗："+e.message+"。請確認網站以 GitHub Pages 或其他 HTTP 伺服器開啟，不要直接以 file:// 開啟。";$("count").textContent="無法載入題庫";$("statusText").textContent=state.error;$("results").innerHTML='<div class="question"><p>'+escapeHtml(state.error)+'</p><p>題庫 JSON 與網頁需要放在同一個已發布的網站中。</p></div>'}}
+["year","subject","search"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));$("reset").addEventListener("click",()=>{$("year").value="all";$("subject").value="all";$("search").value="";render()});load();
+</script>
+</body>
+</html>
