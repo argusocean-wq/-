@@ -7,7 +7,7 @@
   },
   "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
   "officialHomepage": "https://cap-rcpet.rcpet.edu.tw/",
-  "sourceStatus": "official_year_page_and_direct_file_links_verified_not_transcribed",
+  "sourceStatus": "official_year_page_and_direct_file_links_verified_partial_math_questions_1_to_10_imported",
   "subjects": [
     {
       "id": "chinese",
@@ -27,7 +27,7 @@
     {
       "id": "mathematics",
       "label": "數學",
-      "status": "source_only"
+      "status": "partial_imported_q01_q10_draft_pending_official_verification"
     },
     {
       "id": "social-studies",
@@ -49,7 +49,8 @@
     "The official 115-year page directly lists the question papers, answer key, writing test, and English listening audio.",
     "Direct links were followed from the official year page on 2026-10-17. Google Drive previews may require browser sign-in or JavaScript.",
     "This registry confirms source links only; no question text has been transcribed or imported by this update.",
-    "Question text, diagrams, writing prompts, and audio must not be republished until reuse rights are reviewed."
+    "Question text, diagrams, writing prompts, and audio must not be republished until reuse rights are reviewed.",
+    "2026 mathematics questions 1-10 have been imported as draft records from a structured secondary transcription; compare wording, figures, and calculated answers against the official PDF and official key before publication."
   ],
   "officialYearPage": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
   "files": {
