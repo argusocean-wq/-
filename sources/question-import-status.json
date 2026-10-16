@@ -121,6 +121,16 @@
       "percent": 100,
       "path": "scripts/validate-question-batch.mjs",
       "meaning": "已新增題目批次 JSON 結構與內部一致性檢查工具；不代表題目內容、官方答案、圖像或重製權利已核實。"
+    },
+    "preflightAudit2026Math": {
+      "questionRecordsChecked": 27,
+      "structuralErrors": 0,
+      "warnings": 40,
+      "choiceQuestionsWithAnswerPending": 13,
+      "recordsNotPublicationReady": 27,
+      "completeSetTranscriptionPercent": 100,
+      "officialVerificationPercent": 0,
+      "note": "依相容既有資料欄位的預檢規則檢查題目紀錄；這是結構預檢，不是官方答案、來源權利或原始圖像核實。"
     }
   },
   "yearStatus": [
