@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "1.0.0",
+  "exam": {
+    "name": "國中教育會考",
+    "rocYear": 115,
+    "gregorianYear": 2026
+  },
+  "subject": "mathematics",
+  "subjectLabel": "數學",
+  "batch": {
+    "questionNumbers": [
+      1,
+      10
+    ],
+    "importedCount": 10,
+    "knownTotalQuestions": 27,
+    "completeSet": false
+  },
+  "source": {
+    "officialExamPage": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
+    "officialQuestionPaper": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+    "structuredTranscriptionSource": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+    "sourceVerificationStatus": "transcribed_from_structured_secondary_dataset_pending_visual_check_against_official_pdf",
+    "legalBasis": "Taiwan Copyright Act Article 9(1)(5) excludes examination questions held pursuant to laws or regulations from copyright subject matter; verify embedded third-party source passages separately if any are later added."
+  },
+  "importStatus": "draft",
+  "rightsStatus": "allowed_exam_question_text_only",
+  "notes": [
+    "First actual-content import batch: questions 1-10 of the 2026 CAP mathematics paper.",
+    "Question wording and options were transcribed from the linked structured dataset; this batch has not yet been checked against every page of the official PDF.",
+    "Diagrams are represented by textual descriptions rather than the original image files; visual fidelity remains unverified.",
+    "Answer keys and explanations are independently calculated and must be checked against the official reference answer before publication.",
+    "Do not mark this batch published until official-PDF verification, answer-key verification, and UI rendering checks are complete."
+  ],
+  "questions": [
+    {
+      "id": "tw-cap-115-math-q01",
+      "number": 1,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "解二元一次聯立方程式 { x + 2y = 5; 2x - 2y = 1 }，得 x 值為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "-4"
+        },
+        {
+          "id": "B",
+          "text": "-2"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "兩式相加得 3x = 6，因此 x = 2。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q02",
+      "number": 2,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "如圖（一），直角柱 ABCDEF 的底面為正三角形，圖中標示各頂點名稱。判斷此角柱中的 ∠ABC、∠BCF 的度數分別為何？",
+      "figureDescription": "直立三角柱 ABCDEF；上底面為正三角形 ABC，側稜 AD、BE、CF 互相平行且垂直於底面。原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "∠ABC = 90°，∠BCF = 90°"
+        },
+        {
+          "id": "B",
+          "text": "∠ABC = 60°，∠BCF = 60°"
+        },
+        {
+          "id": "C",
+          "text": "∠ABC = 90°，∠BCF = 60°"
+        },
+        {
+          "id": "D",
+          "text": "∠ABC = 60°，∠BCF = 90°"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正三角形內角為 60°；直角柱側稜垂直底面，因此 ∠BCF = 90°。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q03",
+      "number": 3,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "若 √504 的最簡根式為 a√b，則 a + b 之值為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "13"
+        },
+        {
+          "id": "B",
+          "text": "19"
+        },
+        {
+          "id": "C",
+          "text": "20"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "answer": "C",
+      "explanation": "√504 = √(36×14) = 6√14，因此 a+b=6+14=20。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q04",
+      "number": 4,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "已知甲袋中有三顆球，球上分別標記 2、3、4；乙袋中有三顆球，球上分別標記 3、4、5。阿翰打算從甲、乙兩袋中各抽出一球，若甲袋中每顆球被抽出的機會相等，乙袋中每顆球被抽出的機會相等，則抽出的兩球上的數字，總和為多少的機率最大？",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "總和 5、6、7、8、9 的組合數依序為 1、2、3、2、1；總和 7 的機率最大。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q05",
+      "number": 5,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "算式 2.45 × 98.7 − (−0.55) × 98.7 之值介於下列哪兩個數之間？",
+      "options": [
+        {
+          "id": "A",
+          "text": "150，200"
+        },
+        {
+          "id": "B",
+          "text": "200，250"
+        },
+        {
+          "id": "C",
+          "text": "250，300"
+        },
+        {
+          "id": "D",
+          "text": "300，350"
+        }
+      ],
+      "answer": "C",
+      "explanation": "提出公因數 98.7，得 (2.45+0.55)×98.7 = 3×98.7 = 296.1，介於 250 與 300 之間。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q06",
+      "number": 6,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "小彭的農園將收成的文旦根據每顆的重量分為小果、中果、大果，再根據每顆的品質分為良級、優級、特級，分類後各類別的總重量如下表。因為被分類為良級或大果的文旦不受喜愛，所以小彭僅將其餘的文旦都包裝成禮盒販售，求包裝成禮盒販售的文旦總共有多少公斤？",
+      "table": {
+        "caption": "表（一），單位：公斤",
+        "headers": [
+          "類別",
+          "良級",
+          "優級",
+          "特級",
+          "合計"
+        ],
+        "rows": [
+          [
+            "小果",
+            50,
+            180,
+            270,
+            500
+          ],
+          [
+            "中果",
+            20,
+            100,
+            80,
+            200
+          ],
+          [
+            "大果",
+            10,
+            40,
+            50,
+            100
+          ],
+          [
+            "合計",
+            80,
+            320,
+            400,
+            800
+          ]
+        ]
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": "620"
+        },
+        {
+          "id": "B",
+          "text": "630"
+        },
+        {
+          "id": "C",
+          "text": "700"
+        },
+        {
+          "id": "D",
+          "text": "720"
+        }
+      ],
+      "answer": "B",
+      "explanation": "良級或大果總重為 80+100−10=170 公斤（重疊的良級大果扣回一次）；800−170=630 公斤。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q07",
+      "number": 7,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "計算多項式 4x² − 3x − 5 除以 x + 2 後，所得商式與餘式兩者之和為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "4x + 6"
+        },
+        {
+          "id": "B",
+          "text": "4x + 10"
+        },
+        {
+          "id": "C",
+          "text": "−7x − 5"
+        },
+        {
+          "id": "D",
+          "text": "−11x − 1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "多項式除法得商式 4x−11、餘式 17，兩者相加為 4x+6。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q08",
+      "number": 8,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "有一培養皿上均勻分布細菌，圖（二）是培養皿與其俯視圖，生物學家在培養皿上選定四個圓形區域，區域面積越大所含細菌數越多。若圖中甲、乙、丙三個區域細菌的數量分別為 4.4×10⁵ 個、7.3×10⁶ 個、5.4×10⁷ 個，則下列何者可能是丁區域細菌的數量？",
+      "figureDescription": "培養皿俯視圖中四個圓形區域的面積由大到小依序為丙、丁、乙、甲；原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.7×10⁵ 個"
+        },
+        {
+          "id": "B",
+          "text": "1.7×10⁶ 個"
+        },
+        {
+          "id": "C",
+          "text": "1.7×10⁷ 個"
+        },
+        {
+          "id": "D",
+          "text": "1.7×10⁸ 個"
+        }
+      ],
+      "answer": "C",
+      "explanation": "丁的面積介於丙與乙之間，因此細菌數量需介於 7.3×10⁶ 與 5.4×10⁷ 之間；選項 C 符合。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q09",
+      "number": 9,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "已知一元二次方程式 2x(x+7) − 10(x+7) = 0 的兩根為 a、b，且 a>b，求 a+2b 之值為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "−13"
+        },
+        {
+          "id": "B",
+          "text": "−9"
+        },
+        {
+          "id": "C",
+          "text": "−4"
+        },
+        {
+          "id": "D",
+          "text": "−3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "原式可因式分解為 (x+7)(2x−10)=0，兩根為 5 與 −7；a=5、b=−7，故 a+2b=−9。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q10",
+      "number": 10,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "某書店舉辦優惠活動，購買的書原價合計滿 1100 元折扣 200 元。哥哥要買的書原價為 720 元，妹妹要買的書原價不到 1100 元；兩人合買即可折扣 200 元，並依原價比例分攤折扣後總金額。若哥哥分攤 600 元，妹妹要買的書原價為多少元？",
+      "figureDescription": "原題以兄妹對話圖呈現上述資訊；本批以文字描述替代原始圖檔。",
+      "options": [
+        {
+          "id": "A",
+          "text": "360"
+        },
+        {
+          "id": "B",
+          "text": "380"
+        },
+        {
+          "id": "C",
+          "text": "460"
+        },
+        {
+          "id": "D",
+          "text": "480"
+        }
+      ],
+      "answer": "D",
+      "explanation": "設妹妹原價為 x，哥哥分攤金額為 720/(720+x)×(720+x−200)=600，解得 x=480。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    }
+  ]
+}
