@@ -64,6 +64,27 @@ if (Array.isArray(questions)) {
       errors.push(`${where} requires question or prompt text`);
     }
 
+    const citation = q.sourceCitation;
+    if (!citation || typeof citation !== "object") {
+      errors.push(`${where}.sourceCitation is required (every question must cite its source)`);
+    } else {
+      const primary = citation.primarySource;
+      if (!primary || typeof primary !== "object") {
+        errors.push(`${where}.sourceCitation.primarySource is required`);
+      } else {
+        if (typeof primary.url !== "string" || !/^https?:\\/\\//i.test(primary.url)) {
+          errors.push(`${where}.sourceCitation.primarySource.url must be an HTTP(S) URL`);
+        }
+        if (typeof primary.locator !== "string" || !primary.locator.trim()) {
+          errors.push(`${where}.sourceCitation.primarySource.locator must identify the question in its source`);
+        }
+      }
+      if (citation.sourceVerificationStatus !== "officially_reconciled" &&
+          citation.sourceVerificationStatus !== "paper_level_source_attached_question_level_reconciliation_pending") {
+        warnings.push(`${q.id ?? where} has no recognized question-level source verification status`);
+      }
+    }
+
     const recordStatus = q.status ?? q.verificationStatus ?? "draft";
     if (typeof recordStatus !== "string" || !recordStatus.trim()) {
       errors.push(`${where}.status/verificationStatus must be a non-empty string when provided`);
