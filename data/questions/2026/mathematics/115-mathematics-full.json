@@ -70,7 +70,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 1 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q02",
@@ -103,7 +120,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 2 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q03",
@@ -135,7 +169,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 3 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q04",
@@ -167,7 +218,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 4 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q05",
@@ -199,7 +267,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 5 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q06",
@@ -271,7 +356,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 6 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q07",
@@ -303,7 +405,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 7 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q08",
@@ -336,7 +455,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 8 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q09",
@@ -368,7 +504,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 9 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q10",
@@ -401,7 +554,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "allowed_exam_question_text_only",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 10 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q11",
@@ -434,7 +604,24 @@
       "answerVerificationStatus": "pending_official_key_check",
       "status": "draft",
       "rightsStatus": "pending_review",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 11 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q12",
@@ -467,7 +654,24 @@
       "answerVerificationStatus": "pending_official_key_check",
       "status": "draft",
       "rightsStatus": "pending_review",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 12 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q13",
@@ -499,7 +703,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "pending_review",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 13 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q14",
@@ -531,7 +752,24 @@
       "answerVerificationStatus": "independently_solved_pending_official_key_check",
       "status": "draft",
       "rightsStatus": "pending_review",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 14 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q15",
@@ -564,7 +802,24 @@
       "answerVerificationStatus": "pending_official_key_check",
       "status": "draft",
       "rightsStatus": "pending_review",
-      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 15 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q16",
@@ -583,7 +838,25 @@
         "D": "120"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 16 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q17",
@@ -598,7 +871,25 @@
         "D": "2700 + 8 × 2700 × 0.025"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 17 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q18",
@@ -617,7 +908,25 @@
         "D": "5"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 18 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q19",
@@ -636,7 +945,25 @@
         "D": "E 在弧 CD 上，F 在弧 AD 上"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 19 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q20",
@@ -651,7 +978,25 @@
         "D": "甲錯誤，乙正確"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 20 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q21",
@@ -670,7 +1015,25 @@
         "D": "7：8"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 21 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q22",
@@ -689,7 +1052,25 @@
         "D": "甲錯誤，乙正確"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 22 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q23",
@@ -709,7 +1090,25 @@
         "D": "最小值 120，最大值 137"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 23 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q24",
@@ -725,7 +1124,25 @@
         "D": "y = 12000x"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 24 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q25",
@@ -741,7 +1158,25 @@
         "D": "p < 60，q < 60"
       },
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 25 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q26",
@@ -750,7 +1185,25 @@
       "points": 3,
       "prompt": "阿川想挑戰馬拉松，利用每圈 400 公尺跑道訓練。每週星期一、四訓練，第一週星期一跑 5 圈；每週星期四比當週星期一多跑 2 圈；之後每週星期一的圈數與前一週星期四相同，直到某日訓練距離超過 15 公里，就維持該圈數不再增加。請完整寫出解題過程並詳細解釋：(1) 第 2 週星期四跑幾圈？(2) 最早從第幾週的星期幾開始，當日訓練距離會超過 15 公里？",
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 26 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     },
     {
       "id": "tw-cap-115-math-q27",
@@ -773,7 +1226,26 @@
         }
       ],
       "answer": null,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "sourceCitation": {
+        "primarySource": {
+          "label": "國中教育會考官方數學科試題本（整卷 PDF）",
+          "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+          "locator": "第 27 題；頁碼尚待逐題核對"
+        },
+        "officialExamIndex": {
+          "label": "國中教育會考官方 115 年試題專區",
+          "url": "https://cap.rcpet.edu.tw/exam/115/115exam.html"
+        },
+        "secondaryTranscriptionSource": {
+          "label": "JacobLinCool/taiwan-exams 結構化試題資料",
+          "url": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+          "commit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+        },
+        "sourceVerificationStatus": "paper_level_source_attached_question_level_reconciliation_pending"
+      }
     }
-  ]
+  ],
+  "sourcePolicy": "Every question record must carry sourceCitation.primarySource.url and a question-specific locator. Secondary dataset is transcription reference only. Source attribution does not imply reuse permission or official answer verification."
 }
