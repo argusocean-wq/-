@@ -38,7 +38,7 @@ if (sourceUrl.protocol !== "https:" || sourceUrl.hostname !== "huggingface.co" |
 
 const outputDir = resolve(outputDirArg);
 await mkdir(outputDir, { recursive: true });
-const response = await fetch(sourceUrl, { redirect: "error", headers: { accept: "application/json" } });
+const response = await fetch(sourceUrl, { redirect: "follow", headers: { accept: "application/json" } });
 if (!response.ok) {
   console.error(`FAIL: source returned HTTP ${response.status}`);
   process.exit(1);
