@@ -68,11 +68,16 @@ if (Array.isArray(questions)) {
     }
 
     if (q.type === "single_choice" || q.type === "multiple_choice") {
-      if (!Array.isArray(q.options) || q.options.length < 2) {
-        errors.push(`${where} (${q.id ?? index}) must have at least two options`);
+      const optionEntries = Array.isArray(q.options)
+        ? q.options.map((option, optionIndex) => [optionIndex, option])
+        : q.options && typeof q.options === "object"
+          ? Object.entries(q.options).map(([id, text]) => [id, { id, text }])
+          : null;
+      if (!optionEntries || optionEntries.length < 2) {
+        errors.push(`${where} (${q.id ?? index}) must have at least two options in array or keyed-object form`);
       } else {
         const optionIds = new Set();
-        for (const [optionIndex, option] of q.options.entries()) {
+        for (const [optionIndex, option] of optionEntries) {
           if (!option || typeof option.id !== "string" || !option.id.trim()) {
             errors.push(`${where}.options[${optionIndex}].id is required`);
             continue;
