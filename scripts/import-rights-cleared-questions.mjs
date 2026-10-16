@@ -32,6 +32,19 @@ if (!paper || typeof paper !== "object" || !paper.exam || !Array.isArray(paper.q
   process.exit(1);
 }
 
+function hasQuestionSourceCitation(question) {
+  const source = question?.sourceCitation?.primarySource;
+  if (!source || typeof source !== "object") return false;
+  if (typeof source.url !== "string" || !source.url.trim()) return false;
+  try {
+    const url = new URL(source.url);
+    if (url.protocol !== "https:" && url.protocol !== "http:") return false;
+  } catch {
+    return false;
+  }
+  return typeof source.locator === "string" && source.locator.trim().length > 0;
+}
+
 function hasRightsEvidence(question) {
   const evidence = question?.rightsEvidence;
   if (!evidence || typeof evidence !== "object") return false;
@@ -53,7 +66,8 @@ const skipped = [];
 for (const [index, question] of paper.questions.entries()) {
   const statusCleared = question && typeof question === "object" && question.rightsStatus === "cleared";
   const evidenceComplete = hasRightsEvidence(question);
-  if (statusCleared && evidenceComplete) {
+  const citationComplete = hasQuestionSourceCitation(question);
+  if (statusCleared && evidenceComplete && citationComplete) {
     cleared.push(question);
   } else {
     let reason = "rights_status_missing";
@@ -61,6 +75,8 @@ for (const [index, question] of paper.questions.entries()) {
       reason = `rightsStatus_not_cleared:${String(question.rightsStatus)}`;
     } else if (statusCleared && !evidenceComplete) {
       reason = "rights_evidence_incomplete";
+    } else if (statusCleared && evidenceComplete && !citationComplete) {
+      reason = "question_source_citation_incomplete";
     }
     skipped.push({
       index,
@@ -73,10 +89,10 @@ for (const [index, question] of paper.questions.entries()) {
 
 console.log(`Source records: ${paper.questions.length}`);
 console.log(`Rights-cleared records with evidence selected: ${cleared.length}`);
-console.log(`Skipped due to missing/uncleared/incomplete rights evidence: ${skipped.length}`);
+console.log(`Skipped due to missing rights evidence or per-question source citation: ${skipped.length}`);
 
 if (cleared.length === 0) {
-  console.log("NO IMPORT: no record has explicit rightsStatus=\"cleared\" plus complete rightsEvidence. No output file was written.");
+  console.log("NO IMPORT: every record must have cleared rights with evidence and a per-question source URL plus locator. No output file was written.");
   process.exit(0);
 }
 
