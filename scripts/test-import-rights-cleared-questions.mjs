@@ -78,5 +78,5 @@ test("skips cleared records without per-question source citation", async () => {
   assert.equal(result.outputExists, true);
   assert.deepEqual(result.parsed.questions.map(q => q.id), ["with-citation"]);
   assert.equal(result.parsed.importAudit.skippedRecordCount, 1);
-  assert.match(result.result.stdout, /question_source_citation_incomplete/);
+  assert.equal(result.parsed.importAudit.skippedRecords[0].reason, "question_source_citation_incomplete");
 });
