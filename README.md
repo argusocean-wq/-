@@ -13,6 +13,10 @@
 
 https://cap.rcpet.edu.tw/examination.html
 
+## 匯入進度
+
+請查看[試題匯入進度報告](docs/import-progress.md)。目前本輪追蹤的 2025、2026 年 14 個科目項目已完成來源登記（100%），但完整題目內容匯入為 0/14（0%）；來源登記不等於題目已匯入。
+
 ## 開發分支
 
 主要題庫架構與匯入規劃將在 `feature/question-bank-import` 分支進行。
