@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-17",
+  "scope": {
+    "rocYears": [
+      103,
+      115
+    ],
+    "gregorianYears": [
+      2014,
+      2026
+    ],
+    "exam": "國中教育會考",
+    "exclude": [
+      "舊制國中基測"
+    ]
+  },
+  "strategy": {
+    "name": "text-first-multi-subject-bulk-import",
+    "priority": "純文字題幹、選項、閱讀文章、題組內容先於圖像題；圖像題保留 asset reference 並排入第二階段",
+    "batchMode": "multi_subject",
+    "rules": [
+      "只在取得完整來源 payload 後匯入完整試卷，不從搜尋摘要補造題目",
+      "題目文字與選項轉錄完成不等於官方核實完成",
+      "答案鍵需與官方答案核對；解析缺失時留空，不猜答案",
+      "圖片不是純文字題的阻塞條件；圖像題可以先保留有來源的 asset reference 並標記待補圖",
+      "正式發布前完成來源權利審查"
+    ]
+  },
+  "queue": [
+    {
+      "id": "cap-114-english-reading",
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "english-reading",
+      "questionCount": 43,
+      "sourceCommit": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/67e75b8cfb3c787f73f5ed368537ae24a85a6706",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-english-reading/bundle/exam.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-english-reading/bundle/grading.json",
+      "textPriority": "high",
+      "status": "source_bundle_confirmed_question_payload_not_imported",
+      "notes": "Commit page confirms exam.json and grading.json; metadata states 43 multiple-choice questions. Complete JSON payload still needs to be retrieved before question import."
+    },
+    {
+      "id": "cap-114-chinese",
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "chinese",
+      "questionCount": 42,
+      "sourceCommit": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/be1276479c703fa81e63866bfdc635951bc0d681",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/exam.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/grading.json",
+      "textPriority": "high",
+      "status": "source_bundle_confirmed_question_payload_not_imported",
+      "notes": "Commit page confirms exam.json and grading.json. 42-question count is from source grading metadata; image-heavy items should retain asset references."
+    },
+    {
+      "id": "cap-114-social",
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "social-studies",
+      "questionCount": 54,
+      "sourceCommit": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/840d1988908ef3747caaf3effc4d1a1933ecf2f8",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/exam.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/grading.json",
+      "textPriority": "medium",
+      "status": "source_bundle_confirmed_question_payload_not_imported",
+      "notes": "Bundle includes many figure assets; import plain-text stems/options first while preserving figure placeholders and asset paths. Question count follows source grading metadata."
+    },
+    {
+      "id": "cap-115-chinese",
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "chinese",
+      "questionCount": 42,
+      "sourceCommit": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/f71390e952dfac8dfff92e10b34f1152c14baa9f",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-chinese/bundle/exam.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-chinese/bundle/grading.json",
+      "textPriority": "high",
+      "status": "source_bundle_confirmed_question_payload_not_imported",
+      "notes": "Commit page reports 42 multiple-choice questions and lists image assets. Plain-text stems, options and reading passages are priority; figure-based questions can retain asset references."
+    },
+    {
+      "id": "cap-115-math",
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "mathematics",
+      "questionCount": 27,
+      "sourceCommit": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/exam.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/grading.json",
+      "textPriority": "medium",
+      "status": "existing_draft_27_records_pending_official_reconciliation",
+      "notes": "Repository already contains 27 draft records; do not duplicate. Prioritize textual accuracy and mark diagram-dependent items for official PDF reconciliation."
+    }
+  ],
+  "metrics": {
+    "subjectBundlesQueued": 5,
+    "questionCountKnownAcrossQueuedBundles": 208,
+    "questionRecordsImportedByThisBatch": 0,
+    "questionRecordsVerifiedByThisBatch": 0,
+    "importPercent": null,
+    "verificationPercent": null,
+    "note": "208 is the sum of source-reported question counts across queued bundles, not the number imported. No content is counted as imported until complete source payload is available and parsed."
+  },
+  "blockers": [
+    "Current GitHub connector writes files to the target repository but does not retrieve full Hugging Face exam.json payloads.",
+    "The web preview exposes excerpts and commit metadata, not a dependable complete JSON payload.",
+    "Need a permitted way to retrieve complete source bundles, then parse and validate each file before importing."
+  ],
+  "sourcePolicy": "Treat secondary dataset content as transcription input only; reconcile against official CAP papers and answer keys and review reuse rights before publication."
+}
