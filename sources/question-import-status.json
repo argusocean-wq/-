@@ -113,7 +113,13 @@
       "newQuestionRecordsImportedThisRound": 0,
       "globalHistoricalCAPQuestionTotal": null,
       "globalHistoricalCAPRemainingPercent": null,
-      "note": "百分比僅適用於目前五科批次。既有 27 筆為草稿，不是官方核實題目。歷屆總題數尚未盤點。已新增 fail-closed 權利篩選器：僅 rightsStatus 明確為 cleared 的題目可輸出；本輪因無完整來源 payload，新增題目仍為 0。"
+      "note": "目前批次共 208 題來源紀錄：已新增題目 0/208（0%），尚待首次轉錄 181/208（87.02%；另有 27/208 為既有草稿覆蓋），官方核實 0/208（0%），權利證據合格數 0。既有 115 數學 27/27 筆有來源引用（100%），但 rightsStatus=allowed_exam_question_text_only 並非明確重製許可，故不能通過 rightsStatus=cleared 閘門。",
+      "importedQuestionRecordsPercent": 0,
+      "importRemainingPercent": 100,
+      "rightsClearedQuestionRecords": 0,
+      "rightsClearedPercent": 0,
+      "sourceCitationRecordsPresent": 27,
+      "sourceCitationRecordsPercent": 100
     },
     "structuralValidationTool": {
       "completed": 1,
@@ -164,7 +170,9 @@
         "rightsEvidence.reviewedAt",
         "rightsEvidence.reviewer"
       ],
-      "note": "僅 rightsStatus=cleared 且 rightsEvidence 四欄完整才可通過；本輪沒有完整來源 payload，新增題目紀錄仍為 0。"
+      "note": "既有數學草稿逐題權利狀態不是 cleared 且缺少完整 rightsEvidence；目前合格可匯入數 0，不能把來源引用當作重製授權。",
+      "eligibleQuestionCount": 0,
+      "eligibleQuestionPercent": 0
     },
     "perQuestionSourceCitations2026Math": {
       "completed": 27,
@@ -178,7 +186,10 @@
       ],
       "countsAsQuestionContentImport": false,
       "countsAsOfficialQuestionVerification": false,
-      "note": "115 數學科第 1–27 題皆有來源引用及題號定位；頁碼與逐題原文仍待官方 PDF 核對。來源標註不等於重製權利清除或答案核實。"
+      "note": "115 數學科第 1–27 題皆有來源引用及題號定位；頁碼與逐題原文仍待官方 PDF 核對。來源標註不等於重製權利清除或答案核實。",
+      "sourceCitationPercent": 100,
+      "rightsClearedRecords": 0,
+      "rightsClearedPercent": 0
     }
   },
   "yearStatus": [
