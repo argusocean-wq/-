@@ -1,0 +1,600 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "Taiwan Junior High School Mock Exams",
+  "scopeTitle": "所有可查證的國中基本學力測驗（基測）與國中教育會考歷屆試題",
+  "coverageRange": {
+    "rocYearStart": 90,
+    "rocYearEnd": 115,
+    "gregorianYearStart": 2001,
+    "gregorianYearEnd": 2026,
+    "yearSlots": 26
+  },
+  "definitions": {
+    "basicCompetencyTest": "民國90年至102年（2001–2013）舊制國中基本學力測驗；需依年度確認是否有多次測驗及科目差異。",
+    "cap": "民國103年至115年（2014–2026）國中教育會考；依年度官方公布內容確認科目、題本、參考答案、聽力及寫作材料。",
+    "subjectCounts": "科目與題數可能隨制度及年度變動；不得用固定的每年七科作為完整題庫總量分母。"
+  },
+  "officialSources": [
+    {
+      "label": "國中教育會考官方歷屆試題入口",
+      "url": "https://cap.rcpet.edu.tw/examination.html",
+      "appliesTo": "2014 onward"
+    },
+    {
+      "label": "國中教育會考官方網站",
+      "url": "https://cap-rcpet.rcpet.edu.tw/",
+      "appliesTo": "current CAP announcements and official references"
+    },
+    {
+      "label": "校方歷屆試題說明（指出入口涵蓋民國90年基測至最新會考）",
+      "url": "https://web.ckgsh.ntpc.edu.tw/uploads/1663809154210HEjx2iz9.pdf",
+      "appliesTo": "historical scope confirmation; secondary guide only"
+    }
+  ],
+  "years": [
+    {
+      "rocYear": 90,
+      "gregorianYear": 2001,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 91,
+      "gregorianYear": 2002,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 92,
+      "gregorianYear": 2003,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 93,
+      "gregorianYear": 2004,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 94,
+      "gregorianYear": 2005,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 95,
+      "gregorianYear": 2006,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 96,
+      "gregorianYear": 2007,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 97,
+      "gregorianYear": 2008,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 98,
+      "gregorianYear": 2009,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 99,
+      "gregorianYear": 2010,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 100,
+      "gregorianYear": 2011,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 101,
+      "gregorianYear": 2012,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 102,
+      "gregorianYear": 2013,
+      "examType": "國中基測",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": null,
+      "sourceStatus": "year_specific_source_page_and_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "舊制國中基測；須逐年確認各年度科目、測驗次數、題本與答案檔。"
+    },
+    {
+      "rocYear": 103,
+      "gregorianYear": 2014,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 104,
+      "gregorianYear": 2015,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 105,
+      "gregorianYear": 2016,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 106,
+      "gregorianYear": 2017,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 107,
+      "gregorianYear": 2018,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 108,
+      "gregorianYear": 2019,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 109,
+      "gregorianYear": 2020,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 110,
+      "gregorianYear": 2021,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 111,
+      "gregorianYear": 2022,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 112,
+      "gregorianYear": 2023,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 113,
+      "gregorianYear": 2024,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_archive_entry_point_known_year_specific_files_not_yet_audited",
+      "questionContentStatus": "not_imported",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "examType": "國中教育會考",
+      "subjects": [
+        "chinese",
+        "english",
+        "mathematics",
+        "social-studies",
+        "natural-sciences"
+      ],
+      "additionalComponents": [
+        "english-listening",
+        "writing"
+      ],
+      "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+      "sourceStatus": "official_year_page_and_direct_links_verified",
+      "questionContentStatus": "partial_import_requires_reconciliation",
+      "rightsReviewStatus": "pending",
+      "notes": "國中教育會考；須逐年確認官方年度頁面、科目及檔案。"
+    }
+  ],
+  "currentAudit": {
+    "sourceEntryPointVerified": true,
+    "yearSpecificSourceFilesAudited": 1,
+    "yearSpecificSourceFilesExpected": 26,
+    "yearSpecificAuditPercent": 3.85,
+    "completeQuestionSetsVerified": 0,
+    "completeQuestionSetsPercent": 0,
+    "actualQuestionRecordsPreviouslyWritten": 10,
+    "previouslyWrittenRecordsStatus": "unverified_draft_reconciliation_required",
+    "note": "既有 2026 數學第 1–10 題資料仍是草稿；需重新逐題比對官方題本，避免題號、題幹、圖表及答案錯配。在完成核對前不計入已驗證題數。"
+  },
+  "rules": [
+    "Coverage range is a year index, not proof that all exam files for each year have been located.",
+    "Each year may contain multiple exam sessions and subject-specific question sets; build the denominator only after the official archive is audited.",
+    "Keep scanned source URL, page numbers, extraction method, answer-key source, and verification state per question.",
+    "Do not label a question published until question wording, options, figures, answer key, and source rights are checked.",
+    "Separate source-link discovery, raw transcription, verified question records, and published usable questions in metrics."
+  ]
+}
