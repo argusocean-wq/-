@@ -1,4 +1,3 @@
-# Provisional transcription; only Q1-Q21 included because the extracted PDF table has ambiguous blank-column alignment after Q21. Verify against the official PDF before production use.
 question_number,chinese,english_reading,english_listening,mathematics,social_studies,natural_sciences
 1,D,D,A,C,A,C
 2,B,D,C,B,A,B
