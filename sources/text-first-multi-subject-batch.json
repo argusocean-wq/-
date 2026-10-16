@@ -28,7 +28,7 @@
       "先使用 metadata-only audit 檢查來源 bundle 結構與題數；在確認來源條款／重製權利前，不將完整受保護題幹、選項、閱讀文章或圖像描述複製進公開倉庫。",
       "使用 scripts/import-rights-cleared-questions.mjs 採取 fail-closed 權利篩選：只有單題 rightsStatus 明確為 cleared 才能進入輸出；缺失、含糊或未清除者略過，不能因來源公開可讀就視為可重製。",
       "rightsStatus=cleared 單獨不足以通過匯入；還必須附 rightsEvidence.basis、rightsEvidence.evidenceUrl、rightsEvidence.reviewedAt（YYYY-MM-DD）與 rightsEvidence.reviewer，否則略過。",
-      "匯入閘門加固：每題除了 rightsStatus=cleared 與完整 rightsEvidence，還必須有 sourceCitation.primarySource.url（HTTP(S)）及 sourceCitation.primarySource.locator；缺少任一項就略過。新增的回歸測試尚待 CI 實際執行。"
+      "匯入閘門加固：每題除了 rightsStatus=cleared 與完整 rightsEvidence，還必須有 sourceCitation.primarySource.url（HTTP(S)）及 sourceCitation.primarySource.locator；缺少任一項就略過。新增逐題來源引用閘門回歸測試；使用者已確認 GitHub Actions 的 Test rights Clearence import gate 顯示綠燈。"
     ],
     "rightsFilter": {
       "script": "scripts/import-rights-cleared-questions.mjs",
@@ -176,10 +176,10 @@
     "globalTotalNote": "全歷屆各年度各科題數尚未完成盤點；208 僅為目前批次，不代表全歷屆總量。"
   },
   "blockers": [
-    "Current GitHub connector writes files to the target repository but does not retrieve full Hugging Face exam.json payloads.",
-    "The web preview exposes excerpts and commit metadata, not a dependable complete JSON payload.",
-    "Need a permitted way to retrieve complete source bundles, then parse and validate each file before importing.",
-    "Existing 115 mathematics draft mixes question/prompt fields and array/object option shapes; the new validator accepts both, but imported bundles should be normalized to one canonical schema."
+    "目前 GitHub 連線工具無法穩定取得完整 Hugging Face exam.json payload；沒有完整 payload 就不能可靠轉錄題目。",
+    "次級資料集公開可讀不等於有權重製；未找到適用於題幹、選項、閱讀文章與圖像的明確授權證據時，不複製受保護內容。",
+    "下一步需取得可完整解析的來源 bundle，並確認可用授權或其他明確重製依據；再執行 metadata audit、題數／ID／資產檢查與逐題來源定位。",
+    "既有 115 數學 27 筆仍是草稿，需官方題本與答案核對；不能重複匯入或標記為已核實。"
   ],
   "sourcePolicy": "Treat secondary dataset content as transcription input only; reconcile against official CAP papers and answer keys and review reuse rights before publication."
 }
