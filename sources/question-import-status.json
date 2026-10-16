@@ -2,21 +2,20 @@
   "schemaVersion": "1.0.0",
   "updatedAt": "2026-10-17",
   "scope": {
-    "description": "本輪已建立來源登記的 2025 與 2026 年七科追蹤項目；不是整個歷屆題庫的總量。",
-    "years": [
-      2025,
+    "description": "所有可查證的國中基本學力測驗與國中教育會考歷屆試題；年度索引民國90–115年，實際測驗次數與題目集總量待逐年官方檔案盤點。",
+    "rocYears": [
+      90,
+      115
+    ],
+    "gregorianYears": [
+      2001,
       2026
     ],
-    "trackedItems": 14,
-    "subjectIds": [
-      "chinese",
-      "english",
-      "english-listening",
-      "mathematics",
-      "social-studies",
-      "natural-sciences",
-      "writing"
-    ]
+    "indexedYears": 26,
+    "officialYearAuditsCompleted": 1,
+    "officialYearAuditsTotal": 26,
+    "officialYearAuditPercent": 3.85,
+    "note": "不要再使用2025、2026年14個科目項目當成整個歷屆題庫的分母。"
   },
   "metrics": {
     "sourceRecords": {
@@ -26,13 +25,15 @@
     },
     "questionContentImported": {
       "completed": 0,
-      "total": 14,
-      "percent": 0
+      "total": null,
+      "percent": null,
+      "note": "Total number of historical subject/session sets is not yet known; audit all 26 years before setting denominator."
     },
     "rightsAndSourceVerified": {
       "completed": 0,
-      "total": 14,
-      "percent": 0
+      "total": null,
+      "percent": null,
+      "note": "Historical source and reuse review not yet complete."
     },
     "answerKeyTranscription2025": {
       "rowsTranscribed": 21,
@@ -51,7 +52,19 @@
       "remaining": 17,
       "remainingPercent": 62.96,
       "completeSet": false,
-      "verificationStatus": "draft_pending_official_pdf_and_answer_key_check"
+      "verificationStatus": "unverified_draft_reconciliation_required",
+      "countsAsVerifiedQuestionRecords": 0
+    },
+    "historicalYearIndex": {
+      "completed": 26,
+      "total": 26,
+      "percent": 100,
+      "meaning": "year index only"
+    },
+    "historicalOfficialYearAudit": {
+      "completed": 1,
+      "total": 26,
+      "percent": 3.85
     }
   },
   "yearStatus": [
@@ -67,7 +80,7 @@
       "sourceRegistry": "sources/2026-cap-115-sources.json",
       "sourceItems": 7,
       "questionSetsTranscribed": 0,
-      "status": "official_links_verified_partial_math_questions_1_to_10_imported_draft",
+      "status": "partial_math_q01_q10_unverified_draft_reconciliation_required",
       "directFilesVerified": 8,
       "questionRecordsImported": 10,
       "questionRecordsExpectedForMathPaper": 27
@@ -78,6 +91,10 @@
     "Source links and answer-key transcription do not count as full question-content import.",
     "Do not publish question content until source, rights, and answer verification are complete.",
     "Recalculate percentages whenever the audited scope changes.",
-    "Partial question records are tracked separately and do not count as a complete subject question set."
-  ]
+    "Partial question records are tracked separately and do not count as a complete subject question set.",
+    "Overall target includes all historical junior-high Basic Competency Tests (ROC 90-102) and CAP exams (ROC 103-115).",
+    "Do not calculate a complete historical question-bank percentage from the earlier 14-item 2025-2026 scope.",
+    "Previously imported 2026 math records remain unverified draft records until question numbers, wording, figures, and official answers are reconciled."
+  ],
+  "historicalCoverageManifest": "sources/historical-exam-coverage.json"
 }
