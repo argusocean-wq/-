@@ -158,7 +158,8 @@
   "blockers": [
     "Current GitHub connector writes files to the target repository but does not retrieve full Hugging Face exam.json payloads.",
     "The web preview exposes excerpts and commit metadata, not a dependable complete JSON payload.",
-    "Need a permitted way to retrieve complete source bundles, then parse and validate each file before importing."
+    "Need a permitted way to retrieve complete source bundles, then parse and validate each file before importing.",
+    "Existing 115 mathematics draft mixes question/prompt fields and array/object option shapes; the new validator accepts both, but imported bundles should be normalized to one canonical schema."
   ],
   "sourcePolicy": "Treat secondary dataset content as transcription input only; reconcile against official CAP papers and answer keys and review reuse rights before publication."
 }
