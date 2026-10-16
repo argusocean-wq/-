@@ -32,6 +32,8 @@ jobs:
           grep -q 'prefers-reduced-motion' web-test/index.html
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload test page artifact
         uses: actions/upload-pages-artifact@v3
         with:
