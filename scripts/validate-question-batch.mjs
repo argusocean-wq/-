@@ -59,12 +59,14 @@ if (Array.isArray(questions)) {
       numbers.add(q.number);
     }
 
-    if (typeof q.question !== "string" || !q.question.trim()) {
-      errors.push(`${where}.question is required`);
+    const questionText = q.question ?? q.prompt;
+    if (typeof questionText !== "string" || !questionText.trim()) {
+      errors.push(`${where} requires question or prompt text`);
     }
 
-    if (typeof q.status !== "string" || !q.status.trim()) {
-      errors.push(`${where}.status is required`);
+    const recordStatus = q.status ?? q.verificationStatus ?? "draft";
+    if (typeof recordStatus !== "string" || !recordStatus.trim()) {
+      errors.push(`${where}.status/verificationStatus must be a non-empty string when provided`);
     }
 
     if (q.type === "single_choice" || q.type === "multiple_choice") {
@@ -88,19 +90,21 @@ if (Array.isArray(questions)) {
             errors.push(`${where}.options[${optionIndex}].text is required`);
           }
         }
-        if (typeof q.answer !== "string" || !optionIds.has(q.answer)) {
-          errors.push(`${where}.answer must match an option id`);
+        if (q.answer === null || q.answer === undefined || q.answer === "") {
+          warnings.push(`${q.id ?? where} has no answer recorded; official answer verification remains pending`);
+        } else if (typeof q.answer !== "string" || !optionIds.has(q.answer)) {
+          errors.push(`${where}.answer must match an option id when an answer is present`);
         }
       }
     }
 
-    if (q.status === "published" &&
-        (q.answerVerificationStatus !== "officially_verified" || q.rightsStatus !== "cleared")) {
+    if (recordStatus === "published" &&
+        ((q.answerVerificationStatus ?? q.verificationStatus) !== "officially_verified" || q.rightsStatus !== "cleared")) {
       errors.push(`${where} is published without official answer verification and rights clearance`);
     }
 
-    if (q.status !== "published" &&
-        (q.answerVerificationStatus !== "officially_verified" || q.rightsStatus !== "cleared")) {
+    if (recordStatus !== "published" &&
+        ((q.answerVerificationStatus ?? q.verificationStatus) !== "officially_verified" || q.rightsStatus !== "cleared")) {
       // Expected for drafts; visible reminder only, not a structural failure.
       warnings.push(`${q.id ?? where} is not publication-ready; keep excluded from production draws`);
     }
