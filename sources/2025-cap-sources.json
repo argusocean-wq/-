@@ -1,0 +1,54 @@
+{
+  "exam": {
+    "rocYear": 114,
+    "gregorianYear": 2025,
+    "name": "國中教育會考"
+  },
+  "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+  "secondaryReferencePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php",
+  "subjects": [
+    {
+      "id": "chinese",
+      "label": "國文",
+      "questionPaperStatus": "link_only",
+      "sourcePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    },
+    {
+      "id": "english",
+      "label": "英語（閱讀）",
+      "questionPaperStatus": "link_only",
+      "sourcePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    },
+    {
+      "id": "english-listening",
+      "label": "英語（聽力）",
+      "questionPaperStatus": "link_only",
+      "sourcePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    },
+    {
+      "id": "mathematics",
+      "label": "數學",
+      "questionPaperStatus": "link_only",
+      "sourcePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    },
+    {
+      "id": "social-studies",
+      "label": "社會",
+      "questionPaperStatus": "link_only",
+      "sourcePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    },
+    {
+      "id": "natural-sciences",
+      "label": "自然",
+      "questionPaperStatus": "link_only",
+      "sourcePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    },
+    {
+      "id": "writing",
+      "label": "寫作測驗",
+      "questionPaperStatus": "link_only",
+      "sourcePage": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    }
+  ],
+  "note": "The linked school page lists the 2025 question papers, answer table, writing prompt and English listening audio as attachments. This project records the source page rather than copying full exam content. Open the source page to access the original attachments."
+}
