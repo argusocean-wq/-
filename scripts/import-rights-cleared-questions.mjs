@@ -5,10 +5,10 @@
  * Usage:
  *   node scripts/import-rights-cleared-questions.mjs <source-paper.json> <output-paper.json>
  *
- * Only question records with rightsStatus === "cleared" are copied.
- * Missing, ambiguous, or restricted rights metadata is skipped. This script
- * does not infer permission from public availability, and does not certify
- * answer accuracy or publication readiness.
+ * A record is eligible only when rightsStatus === "cleared" AND rightsEvidence
+ * contains a human-reviewable basis, evidence URL, review date, and reviewer.
+ * Public availability, source attribution, or a self-declared status alone is
+ * not treated as permission. This tool does not provide legal advice.
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
@@ -32,29 +32,51 @@ if (!paper || typeof paper !== "object" || !paper.exam || !Array.isArray(paper.q
   process.exit(1);
 }
 
+function hasRightsEvidence(question) {
+  const evidence = question?.rightsEvidence;
+  if (!evidence || typeof evidence !== "object") return false;
+  if (typeof evidence.basis !== "string" || !evidence.basis.trim()) return false;
+  if (typeof evidence.evidenceUrl !== "string") return false;
+  try {
+    const url = new URL(evidence.evidenceUrl);
+    if (url.protocol !== "https:" && url.protocol !== "http:") return false;
+  } catch {
+    return false;
+  }
+  if (typeof evidence.reviewedAt !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.reviewedAt)) return false;
+  if (typeof evidence.reviewer !== "string" || !evidence.reviewer.trim()) return false;
+  return true;
+}
+
 const cleared = [];
 const skipped = [];
 for (const [index, question] of paper.questions.entries()) {
-  if (question && typeof question === "object" && question.rightsStatus === "cleared") {
+  const statusCleared = question && typeof question === "object" && question.rightsStatus === "cleared";
+  const evidenceComplete = hasRightsEvidence(question);
+  if (statusCleared && evidenceComplete) {
     cleared.push(question);
   } else {
+    let reason = "rights_status_missing";
+    if (question?.rightsStatus && question.rightsStatus !== "cleared") {
+      reason = `rightsStatus_not_cleared:${String(question.rightsStatus)}`;
+    } else if (statusCleared && !evidenceComplete) {
+      reason = "rights_evidence_incomplete";
+    }
     skipped.push({
       index,
       id: typeof question?.id === "string" ? question.id : null,
       number: Number.isInteger(question?.number) ? question.number : null,
-      reason: question?.rightsStatus
-        ? `rightsStatus_not_cleared:${String(question.rightsStatus)}`
-        : "rights_status_missing"
+      reason
     });
   }
 }
 
 console.log(`Source records: ${paper.questions.length}`);
-console.log(`Rights-cleared records selected: ${cleared.length}`);
-console.log(`Skipped due to missing/uncleared rights status: ${skipped.length}`);
+console.log(`Rights-cleared records with evidence selected: ${cleared.length}`);
+console.log(`Skipped due to missing/uncleared/incomplete rights evidence: ${skipped.length}`);
 
 if (cleared.length === 0) {
-  console.log("NO IMPORT: no record has explicit rightsStatus=\"cleared\". No output file was written.");
+  console.log("NO IMPORT: no record has explicit rightsStatus=\"cleared\" plus complete rightsEvidence. No output file was written.");
   process.exit(0);
 }
 
@@ -63,12 +85,12 @@ const output = {
   exam: { ...paper.exam, totalQuestionRecords: cleared.length },
   questions: cleared,
   importAudit: {
-    policy: "fail-closed-explicit-question-level-rights-clearance",
+    policy: "fail-closed-explicit-question-level-rights-clearance-with-evidence",
     sourceRecordCount: paper.questions.length,
     importedRecordCount: cleared.length,
     skippedRecordCount: skipped.length,
     skippedRecords: skipped,
-    note: "Rights clearance alone does not establish official answer verification or publication readiness."
+    note: "Rights evidence must be reviewed for applicability. Rights clearance alone does not establish official answer verification or publication readiness."
   }
 };
 
