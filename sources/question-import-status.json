@@ -54,7 +54,8 @@
       "completeSet": true,
       "verificationStatus": "full_paper_draft_pending_official_reconciliation",
       "countsAsVerifiedQuestionRecords": 0,
-      "verifiedPercent": 0
+      "verifiedPercent": 0,
+      "meaning": "27 筆完整草稿紀錄；100% 僅指草稿轉錄，不代表官方核實或可發布。"
     },
     "historicalYearIndex": {
       "completed": 13,
@@ -113,6 +114,13 @@
       "globalHistoricalCAPQuestionTotal": null,
       "globalHistoricalCAPRemainingPercent": null,
       "note": "Percentages are for the current five-subject batch only. Existing 27 records are draft transcription, not verified questions. Total historical CAP question count is not inventoried, so global remaining percentage is not calculable."
+    },
+    "structuralValidationTool": {
+      "completed": 1,
+      "total": 1,
+      "percent": 100,
+      "path": "scripts/validate-question-batch.mjs",
+      "meaning": "已新增題目批次 JSON 結構與內部一致性檢查工具；不代表題目內容、官方答案、圖像或重製權利已核實。"
     }
   },
   "yearStatus": [
@@ -128,10 +136,11 @@
       "sourceRegistry": "sources/2026-cap-115-sources.json",
       "sourceItems": 7,
       "questionSetsTranscribed": 0,
-      "status": "partial_math_q01_q15_unverified_draft_reconciliation_required",
+      "status": "full_27_record_math_draft_pending_official_reconciliation",
       "directFilesVerified": 8,
-      "questionRecordsImported": 15,
-      "questionRecordsExpectedForMathPaper": 27
+      "questionRecordsImported": 27,
+      "questionRecordsExpectedForMathPaper": 27,
+      "questionRecordsTranscribed": 27
     }
   ],
   "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
@@ -145,7 +154,7 @@
     "Previously imported 2026 math records remain unverified draft records until question numbers, wording, figures, and official answers are reconciled.",
     "Registering a secondary dataset or source links does not count as question text import, official verification, or rights clearance.",
     "A full paper can be marked 100% transcribed only when all expected question records are present; this is separate from official verification and publishable status.",
-    "Current active scope is CAP ROC 103-115 only; do not count old Basic Competency Test years toward active import completion."
+    "目前批次與進度文件以 CAP 民國 103–115 年為活躍範圍；若使用者再次明確擴大至舊制基測，需先同步更新 scope 與分母，不能混算。"
   ],
   "historicalCoverageManifest": "sources/cap-only-historical-import-catalog.json",
   "nextBatchStrategy": "multi-subject parallel queue; prioritize text stems/options/reading passages; retain figure placeholders and asset paths for image-dependent questions"
