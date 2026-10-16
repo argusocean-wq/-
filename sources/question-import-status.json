@@ -43,6 +43,15 @@
       "completed": 8,
       "total": 8,
       "percent": 100
+    },
+    "questionRecordsImported2026Math": {
+      "completed": 10,
+      "total": 27,
+      "percent": 37.04,
+      "remaining": 17,
+      "remainingPercent": 62.96,
+      "completeSet": false,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key_check"
     }
   },
   "yearStatus": [
@@ -58,14 +67,17 @@
       "sourceRegistry": "sources/2026-cap-115-sources.json",
       "sourceItems": 7,
       "questionSetsTranscribed": 0,
-      "status": "official_year_page_and_8_direct_file_links_verified_not_transcribed",
-      "directFilesVerified": 8
+      "status": "official_links_verified_partial_math_questions_1_to_10_imported_draft",
+      "directFilesVerified": 8,
+      "questionRecordsImported": 10,
+      "questionRecordsExpectedForMathPaper": 27
     }
   ],
   "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
   "rules": [
     "Source links and answer-key transcription do not count as full question-content import.",
     "Do not publish question content until source, rights, and answer verification are complete.",
-    "Recalculate percentages whenever the audited scope changes."
+    "Recalculate percentages whenever the audited scope changes.",
+    "Partial question records are tracked separately and do not count as a complete subject question set."
   ]
 }
