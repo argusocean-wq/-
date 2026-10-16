@@ -161,7 +161,7 @@
     "questionRecordsVerifiedByThisBatch": 0,
     "importPercent": null,
     "verificationPercent": null,
-    "note": "208 is the sum of source-reported question counts across queued bundles, not the number imported. No content is counted as imported until complete source payload is available and parsed.",
+    "note": "本輪補登官方歷屆試題入口、115 年官方年度頁及 114 年學校公告參考頁（3/3，100%來源入口記錄）；這是來源發現，不是題目匯入。當前批次實際新增題目 0/208（0%），逐題官方核實 0/208（0%）。",
     "totalQuestionsInCurrentBatch": 208,
     "existingDraftRecordsInCurrentBatch": 27,
     "firstTranscriptionRemaining": 181,
@@ -173,7 +173,9 @@
     "officialVerificationRemainingPercent": 100,
     "globalHistoricalCAPQuestionTotal": null,
     "globalHistoricalCAPRemainingPercent": null,
-    "globalTotalNote": "全歷屆各年度各科題數尚未完成盤點；208 僅為目前批次，不代表全歷屆總量。"
+    "globalTotalNote": "全歷屆各年度各科題數尚未完成盤點；208 僅為目前批次，不代表全歷屆總量。",
+    "sourceLinksDiscovered": 3,
+    "sourceLinksDiscoveredPercent": 100
   },
   "blockers": [
     "目前 GitHub 連線工具無法穩定取得完整 Hugging Face exam.json payload；沒有完整 payload 就不能可靠轉錄題目。",
@@ -181,5 +183,12 @@
     "下一步需取得可完整解析的來源 bundle，並確認可用授權或其他明確重製依據；再執行 metadata audit、題數／ID／資產檢查與逐題來源定位。",
     "既有 115 數學 27 筆仍是草稿，需官方題本與答案核對；不能重複匯入或標記為已核實。"
   ],
-  "sourcePolicy": "Treat secondary dataset content as transcription input only; reconcile against official CAP papers and answer keys and review reuse rights before publication."
+  "sourcePolicy": "Treat secondary dataset content as transcription input only; reconcile against official CAP papers and answer keys and review reuse rights before publication.",
+  "sourceDiscovery": {
+    "checkedAt": "2026-10-17",
+    "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
+    "officialYearPage115": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
+    "additional114SchoolReference": "https://sljh.hcc.edu.tw/p/406-1034-491334,r1565.php?Lang=zh-tw",
+    "finding": "官方歷屆試題入口及學校公告可用於逐年核對試卷與答案；僅找到可下載試題不代表允許將完整題目文字再發布。此輪未取得可解析的完整 exam.json payload，故不增加題目紀錄。"
+  }
 }
