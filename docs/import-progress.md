@@ -143,3 +143,5 @@
 - 目前完整來源 payload 仍未取得，因此本輪新增實際題目紀錄仍為 **0**；沒有虛構題目，也沒有把來源清單計入匯入量。
 
 - 新增回歸測試 `scripts/test-import-rights-cleared-questions.mjs`，涵蓋：完整證據才匯入、權利狀態缺漏／限制時略過、證據網址或日期格式錯誤時不輸出。執行方式：`node --test scripts/test-import-rights-cleared-questions.mjs`。目前只確認測試檔已提交；由於此工作階段無法在你的 GitHub 執行環境直接執行 Node 測試，測試結果尚未宣稱通過。
+
+- 新增 `.github/workflows/question-bank-validation.yml`：在推送到 `feature/question-bank-import`、對該分支建立 PR，或手動觸發時，自動執行權利閘門回歸測試與 115 數學草稿結構驗證。工作流程檔已從 GitHub 重新讀取確認；目前尚未取得 Actions 執行結果，因此不能宣稱 CI 已通過。
