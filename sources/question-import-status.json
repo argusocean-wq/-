@@ -2,20 +2,20 @@
   "schemaVersion": "1.0.0",
   "updatedAt": "2026-10-17",
   "scope": {
-    "description": "所有可查證的國中基本學力測驗與國中教育會考歷屆試題；年度索引民國90–115年，實際測驗次數與題目集總量待逐年官方檔案盤點。",
+    "description": "目前匯入範圍依使用者指示限定為國中教育會考歷屆試題，不含舊制國中基測。",
     "rocYears": [
-      90,
+      103,
       115
     ],
     "gregorianYears": [
-      2001,
+      2014,
       2026
     ],
-    "indexedYears": 26,
+    "indexedYears": 13,
     "officialYearAuditsCompleted": 1,
-    "officialYearAuditsTotal": 26,
-    "officialYearAuditPercent": 3.85,
-    "note": "不要再使用2025、2026年14個科目項目當成整個歷屆題庫的分母。"
+    "officialYearAuditsTotal": 13,
+    "officialYearAuditPercent": 7.69,
+    "note": "13年年度索引與來源目錄不等於完整試卷已匯入；年度科目組合與場次仍需逐年核實。"
   },
   "metrics": {
     "sourceRecords": {
@@ -24,10 +24,10 @@
       "percent": 100
     },
     "questionContentImported": {
-      "completed": 0,
+      "completed": 1,
       "total": null,
       "percent": null,
-      "note": "Total number of historical subject/session sets is not yet known; audit all 26 years before setting denominator."
+      "note": "One 2026 mathematics paper exists as a 27-record draft; total CAP paper/subject sets across 2014-2026 has not been fully inventoried."
     },
     "rightsAndSourceVerified": {
       "completed": 0,
@@ -54,19 +54,18 @@
       "completeSet": true,
       "verificationStatus": "full_paper_draft_pending_official_reconciliation",
       "countsAsVerifiedQuestionRecords": 0,
-      "verifiedPercent": 0,
-      "notes": "A consolidated 27-record draft file exists. Content transcription completeness is 100%; official wording, figures, answers, rights and publication checks remain pending."
+      "verifiedPercent": 0
     },
     "historicalYearIndex": {
-      "completed": 26,
-      "total": 26,
+      "completed": 13,
+      "total": 13,
       "percent": 100,
-      "meaning": "year index only"
+      "meaning": "CAP year index only; Basic Competency Test excluded from current scope"
     },
     "historicalOfficialYearAudit": {
       "completed": 1,
-      "total": 26,
-      "percent": 3.85
+      "total": 13,
+      "percent": 7.69
     },
     "secondaryDatasetRegistered2026Math": {
       "completed": 1,
@@ -84,6 +83,12 @@
       "verificationPercent": 0,
       "completeSetDraft": true,
       "publishable": false
+    },
+    "capStructuredDatasetCatalog": {
+      "completed": 13,
+      "total": 13,
+      "percent": 100,
+      "meaning": "source entries catalogued across 3 years; not question-content imports"
     }
   },
   "yearStatus": [
@@ -115,7 +120,8 @@
     "Do not calculate a complete historical question-bank percentage from the earlier 14-item 2025-2026 scope.",
     "Previously imported 2026 math records remain unverified draft records until question numbers, wording, figures, and official answers are reconciled.",
     "Registering a secondary dataset or source links does not count as question text import, official verification, or rights clearance.",
-    "A full paper can be marked 100% transcribed only when all expected question records are present; this is separate from official verification and publishable status."
+    "A full paper can be marked 100% transcribed only when all expected question records are present; this is separate from official verification and publishable status.",
+    "Current active scope is CAP ROC 103-115 only; do not count old Basic Competency Test years toward active import completion."
   ],
-  "historicalCoverageManifest": "sources/historical-exam-coverage.json"
+  "historicalCoverageManifest": "sources/cap-only-historical-import-catalog.json"
 }
