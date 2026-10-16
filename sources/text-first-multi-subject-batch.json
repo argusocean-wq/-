@@ -161,7 +161,7 @@
     "questionRecordsVerifiedByThisBatch": 0,
     "importPercent": null,
     "verificationPercent": null,
-    "note": "本輪新增核實官方來源頁面 2/2（100%）。實際新增題目 0/208（0%）；逐題官方核實 0/208（0%）；權利清查通過 0/208（0%）。尚未取得可供逐題解析的完整來源內容，故未建立虛構題目。",
+    "note": "繼續核對官方來源入口：2/2（100%）。新增題目 0/208（0%），逐題官方核實 0/208（0%），權利清查通過 0/208（0%）。完整來源 payload 尚未取回，因此本輪只更新可核實的來源紀錄，不以搜尋摘要拼造題目。",
     "totalQuestionsInCurrentBatch": 208,
     "existingDraftRecordsInCurrentBatch": 27,
     "firstTranscriptionRemaining": 181,
@@ -177,7 +177,8 @@
     "sourceLinksDiscovered": 3,
     "sourceLinksDiscoveredPercent": 100,
     "officialSourcePagesConfirmed": 2,
-    "officialSourcePagesConfirmedPercent": 100
+    "officialSourcePagesConfirmedPercent": 100,
+    "rightsClearedRecords": 0
   },
   "blockers": [
     "目前 GitHub 連線工具無法穩定取得完整 Hugging Face exam.json payload；沒有完整 payload 就不能可靠轉錄題目。",
@@ -194,6 +195,20 @@
     "finding": "核實官方國中教育會考網站有115年試題題本暨參考答案公告；學校公告列出國文、寫作、英語閱讀、英語聽力、數學、自然、社會等附件。此為來源存在性確認，不等同題目逐題核實或重製授權。",
     "officialCapSite": "https://cap-rcpet.rcpet.edu.tw/",
     "official115Announcement": "https://cap-rcpet.rcpet.edu.tw/",
-    "school115Reference": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
+    "school115Reference": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php",
+    "officialWebsite": {
+      "url": "https://cap-rcpet.rcpet.edu.tw/",
+      "confirmed": true,
+      "confirmedAt": "2026-10-17",
+      "evidence": "Official website search result lists the 115-year exam booklet and reference answers announcement dated 115.05.17."
+    },
+    "schoolNotice115": {
+      "url": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php",
+      "confirmed": true,
+      "confirmedAt": "2026-10-17",
+      "evidence": "Notice lists subject attachments for Chinese, English reading/listening, mathematics, natural science, social studies, and writing."
+    },
+    "rightsCaution": "Official/source page existence is not item-level answer verification and does not itself grant permission to republish complete question text.",
+    "payloadStatus": "complete_source_payload_not_retrieved"
   }
 }
