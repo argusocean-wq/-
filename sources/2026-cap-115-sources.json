@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "exam": {
+    "name": "國中教育會考",
+    "rocYear": 115,
+    "gregorianYear": 2026
+  },
+  "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
+  "officialHomepage": "https://cap-rcpet.rcpet.edu.tw/",
+  "sourceStatus": "official_year_page_identified_not_yet_transcribed",
+  "subjects": [
+    {
+      "id": "chinese",
+      "label": "國文",
+      "status": "source_only"
+    },
+    {
+      "id": "english",
+      "label": "英語（閱讀）",
+      "status": "source_only"
+    },
+    {
+      "id": "english-listening",
+      "label": "英語（聽力）",
+      "status": "source_only"
+    },
+    {
+      "id": "mathematics",
+      "label": "數學",
+      "status": "source_only"
+    },
+    {
+      "id": "social-studies",
+      "label": "社會",
+      "status": "source_only"
+    },
+    {
+      "id": "natural-sciences",
+      "label": "自然",
+      "status": "source_only"
+    },
+    {
+      "id": "writing",
+      "label": "寫作測驗",
+      "status": "source_only"
+    }
+  ],
+  "notes": [
+    "The official site lists the 115-year CAP question booklets and reference answers as an announcement dated 2026-05-17.",
+    "This file is a source registry, not a claim that the PDF/audio assets have been downloaded or transcribed.",
+    "Copying or republishing question text, diagrams, writing prompts, or audio requires separate rights review."
+  ]
+}
