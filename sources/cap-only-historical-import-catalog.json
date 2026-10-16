@@ -51,8 +51,12 @@
       "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/exam.json",
       "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/manifest.json",
       "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/grading.json",
-      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
-      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+      "status": "source_verified_from_public_dataset_commit_full_json_not_yet_retrievable_in_current_import_tool",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation",
+      "priority": 1,
+      "importPlan": "bulk_full_paper_first",
+      "datasetCommitUrl": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/be1276479c703fa81e63866bfdc635951bc0d681",
+      "blocker": "The public dataset commit confirms exam.json and related assets exist, but current GitHub connector cannot fetch Hugging Face files directly and web preview does not expose the complete JSON body; do not fabricate question records."
     },
     {
       "rocYear": 114,
@@ -664,6 +668,26 @@
     "本目錄只登記找到的次級結構化資料集來源；不代表這些題目已複製進本倉庫或已完成核實。",
     "CAP-113 目前此目錄只登記到國文資料集；CAP-114 與 CAP-115 登記國文、英語閱讀、數學、自然、社會、寫作六科。英語聽力需另查官方年度檔案。",
     "CAP-103至CAP-112仍需逐年查官方歷屆頁，不能因未列次級資料集就推斷沒有官方題本。",
-    "整卷匯入優先：每科每年度應以完整卷為單位；完成後逐題核對官方題本、答案、圖檔及來源權利。"
-  ]
+    "整卷匯入優先：每科每年度應以完整卷為單位；完成後逐題核對官方題本、答案、圖檔及來源權利。",
+    "Latest continuation: prioritised CAP-114 Chinese as the next full-paper batch because the public dataset commit confirms a complete exam.json and assets exist. It is not marked imported until the complete payload can be retrieved and copied; search snippets alone are insufficient for faithful full-paper import."
+  ],
+  "nextBatchPlan": {
+    "priority": "cap-114-chinese",
+    "batchSize": "one complete subject paper",
+    "status": "blocked_on_full_source_payload",
+    "requiredArtifacts": [
+      "bundle/exam.json",
+      "bundle/grading.json",
+      "bundle/manifest.json",
+      "bundle/assets/*"
+    ],
+    "verification": [
+      "parse complete JSON",
+      "count questions and subquestions",
+      "compare to official annual paper",
+      "verify answers against official answer key",
+      "preserve image asset references",
+      "review source/reuse terms"
+    ]
+  }
 }
