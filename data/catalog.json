@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "Taiwan Junior High School Mock Exams",
+  "locale": "zh-TW",
+  "difficultyLevels": [
+    {
+      "id": "easy",
+      "label": "簡單"
+    },
+    {
+      "id": "medium",
+      "label": "中等"
+    },
+    {
+      "id": "hard",
+      "label": "困難"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "chinese",
+      "label": "國文",
+      "levels": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    {
+      "id": "english",
+      "label": "英語",
+      "levels": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    {
+      "id": "mathematics",
+      "label": "數學",
+      "levels": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    {
+      "id": "social-studies",
+      "label": "社會",
+      "levels": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    {
+      "id": "natural-sciences",
+      "label": "自然",
+      "levels": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    {
+      "id": "writing",
+      "label": "寫作測驗",
+      "levels": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    {
+      "id": "english-listening",
+      "label": "英語聽力",
+      "levels": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    }
+  ],
+  "questionStatus": [
+    "draft",
+    "source_verified",
+    "rights_reviewed",
+    "published"
+  ],
+  "notes": [
+    "Difficulty labels in this catalog are practice classifications, not official CAP difficulty labels.",
+    "Do not publish a question until its source and reuse permissions have been reviewed.",
+    "Keep official PDFs linked as sources where redistribution permission is unclear."
+  ]
+}
