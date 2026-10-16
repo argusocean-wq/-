@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "description": "Example only; no copyrighted exam content included.",
+  "questions": [
+    {
+      "id": "demo-math-001",
+      "subject": "數學",
+      "year": 2026,
+      "examSession": "demo",
+      "questionNumber": "DEMO-1",
+      "difficulty": "未標記",
+      "questionType": "single_choice",
+      "prompt": "這是用來測試資料流程的示範題，不代表官方會考題目。",
+      "choices": [
+        { "key": "A", "text": "選項示範 A" },
+        { "key": "B", "text": "選項示範 B" }
+      ],
+      "answer": null,
+      "explanation": "",
+      "source": {
+        "url": "https://cap-rcpet.rcpet.edu.tw/",
+        "checkedAt": null,
+        "rightsStatus": "unknown",
+        "notes": "示範資料；需核對來源與使用權限。"
+      },
+      "status": "draft"
+    }
+  ]
+}

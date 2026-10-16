@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExamQuestion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subject", "year", "questionType", "status", "source"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "subject": { "type": "string", "enum": ["國文", "英語", "數學", "社會", "自然", "寫作測驗", "英語聽力"] },
+    "year": { "type": "integer", "minimum": 1, "maximum": 9999 },
+    "examSession": { "type": "string", "maxLength": 80 },
+    "questionNumber": { "type": ["integer", "string"] },
+    "difficulty": { "type": "string", "enum": ["簡單", "中等", "困難", "未標記"] },
+    "questionType": { "type": "string", "enum": ["single_choice", "multiple_choice", "written", "listening", "unknown"] },
+    "prompt": { "type": "string", "maxLength": 20000 },
+    "choices": { "type": "array", "maxItems": 12, "items": { "type": "object", "required": ["key", "text"], "properties": { "key": { "type": "string", "maxLength": 10 }, "text": { "type": "string", "maxLength": 10000 } }, "additionalProperties": false } },
+    "answer": { "type": ["string", "array", "null"] },
+    "explanation": { "type": "string", "maxLength": 20000 },
+    "source": {
+      "type": "object",
+      "required": ["url", "checkedAt", "rightsStatus"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "checkedAt": { "type": ["string", "null"], "format": "date-time" },
+        "rightsStatus": { "type": "string", "enum": ["unknown", "review_pending", "permission_granted", "public_domain", "restricted", "not_for_redistribution"] },
+        "notes": { "type": "string", "maxLength": 2000 }
+      },
+      "additionalProperties": false
+    },
+    "status": { "type": "string", "enum": ["draft", "transcribed", "source_verified", "rights_reviewed", "approved", "rejected"] },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

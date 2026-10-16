@@ -1,0 +1,13 @@
+{
+  "name": "taiwan-junior-high-exam-bank",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Responsive exam-bank foundation for Taiwan junior-high learners",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --test"
+  },
+  "engines": { "node": ">=20" }
+}
