@@ -96,6 +96,16 @@
       "total": 1,
       "percent": 0,
       "reason": "Full exam.json payload is not accessible through current connector; source metadata confirmed, question content not imported"
+    },
+    "multiSubjectTextFirstQueue": {
+      "subjectBundlesQueued": 5,
+      "questionCountKnownAcrossQueuedBundles": 208,
+      "questionRecordsImportedByThisBatch": 0,
+      "questionRecordsVerifiedByThisBatch": 0,
+      "importPercent": null,
+      "verificationPercent": null,
+      "manifest": "sources/text-first-multi-subject-batch.json",
+      "note": "208 is the source-reported question-count sum for five queued bundles, not imported content. CAP-115 math already has a separate 27-record draft and is not to be duplicated."
     }
   },
   "yearStatus": [
@@ -130,5 +140,6 @@
     "A full paper can be marked 100% transcribed only when all expected question records are present; this is separate from official verification and publishable status.",
     "Current active scope is CAP ROC 103-115 only; do not count old Basic Competency Test years toward active import completion."
   ],
-  "historicalCoverageManifest": "sources/cap-only-historical-import-catalog.json"
+  "historicalCoverageManifest": "sources/cap-only-historical-import-catalog.json",
+  "nextBatchStrategy": "multi-subject parallel queue; prioritize text stems/options/reading passages; retain figure placeholders and asset paths for image-dependent questions"
 }
