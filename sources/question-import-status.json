@@ -98,14 +98,21 @@
       "reason": "Full exam.json payload is not accessible through current connector; source metadata confirmed, question content not imported"
     },
     "multiSubjectTextFirstQueue": {
-      "subjectBundlesQueued": 5,
-      "questionCountKnownAcrossQueuedBundles": 208,
-      "questionRecordsImportedByThisBatch": 0,
-      "questionRecordsVerifiedByThisBatch": 0,
-      "importPercent": null,
-      "verificationPercent": null,
       "manifest": "sources/text-first-multi-subject-batch.json",
-      "note": "208 is the source-reported question-count sum for five queued bundles, not imported content. CAP-115 math already has a separate 27-record draft and is not to be duplicated."
+      "subjectBundlesQueued": 5,
+      "totalQuestionsInCurrentBatch": 208,
+      "existingDraftRecordsInCurrentBatch": 27,
+      "firstTranscriptionRemaining": 181,
+      "firstTranscriptionCompletePercent": 12.98,
+      "firstTranscriptionRemainingPercent": 87.02,
+      "officialVerificationCompleted": 0,
+      "officialVerificationRemaining": 208,
+      "officialVerificationCompletePercent": 0,
+      "officialVerificationRemainingPercent": 100,
+      "newQuestionRecordsImportedThisRound": 0,
+      "globalHistoricalCAPQuestionTotal": null,
+      "globalHistoricalCAPRemainingPercent": null,
+      "note": "Percentages are for the current five-subject batch only. Existing 27 records are draft transcription, not verified questions. Total historical CAP question count is not inventoried, so global remaining percentage is not calculable."
     }
   },
   "yearStatus": [
