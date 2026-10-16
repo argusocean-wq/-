@@ -113,7 +113,7 @@
       "newQuestionRecordsImportedThisRound": 0,
       "globalHistoricalCAPQuestionTotal": null,
       "globalHistoricalCAPRemainingPercent": null,
-      "note": "Percentages are for the current five-subject batch only. Existing 27 records are draft transcription, not verified questions. Total historical CAP question count is not inventoried, so global remaining percentage is not calculable."
+      "note": "百分比僅適用於目前五科批次。既有 27 筆為草稿，不是官方核實題目。歷屆總題數尚未盤點。已新增 fail-closed 權利篩選器：僅 rightsStatus 明確為 cleared 的題目可輸出；本輪因無完整來源 payload，新增題目仍為 0。"
     },
     "structuralValidationTool": {
       "completed": 1,
@@ -146,6 +146,18 @@
       "localPayloadImported": false,
       "reason": "目前只完成公開來源頁／diff 結構確認；未把整份題幹與選項複製到倉庫。正式匯入前需確認可重製權利；可先做 metadata-only 結構稽核。",
       "countsAsQuestionContentImport": false
+    },
+    "rightsClearedImportGate": {
+      "completed": 1,
+      "total": 1,
+      "percent": 100,
+      "path": "scripts/import-rights-cleared-questions.mjs",
+      "policy": "fail_closed",
+      "eligibleRightsStatus": "cleared",
+      "importedByThisToolThisRound": 0,
+      "skippedRecordsCount": null,
+      "skippedRecordsCountNote": "尚未取得可解析的完整來源 payload，不能可靠計算各題權利狀態或略過題數。",
+      "meaning": "已建立權利明確清除才可輸出的匯入閘門；本輪沒有新增題目紀錄。"
     }
   },
   "yearStatus": [
