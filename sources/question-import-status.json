@@ -46,11 +46,11 @@
       "percent": 100
     },
     "questionRecordsImported2026Math": {
-      "completed": 10,
+      "completed": 15,
       "total": 27,
-      "percent": 37.04,
-      "remaining": 17,
-      "remainingPercent": 62.96,
+      "percent": 55.56,
+      "remaining": 12,
+      "remainingPercent": 44.44,
       "completeSet": false,
       "verificationStatus": "unverified_draft_reconciliation_required",
       "countsAsVerifiedQuestionRecords": 0
@@ -80,9 +80,9 @@
       "sourceRegistry": "sources/2026-cap-115-sources.json",
       "sourceItems": 7,
       "questionSetsTranscribed": 0,
-      "status": "partial_math_q01_q10_unverified_draft_reconciliation_required",
+      "status": "partial_math_q01_q15_unverified_draft_reconciliation_required",
       "directFilesVerified": 8,
-      "questionRecordsImported": 10,
+      "questionRecordsImported": 15,
       "questionRecordsExpectedForMathPaper": 27
     }
   ],
