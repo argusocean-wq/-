@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0.0",
+  "exam": {
+    "name": "國中教育會考",
+    "rocYear": 115,
+    "gregorianYear": 2026,
+    "subject": "數學"
+  },
+  "dataset": {
+    "name": "JacobLinCool/taiwan-exams",
+    "bundlePath": "cap-115-math/bundle",
+    "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/exam.json",
+    "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/manifest.json",
+    "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/grading.json",
+    "answerSchemaJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/answer_schema.json",
+    "bundleCommit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a",
+    "observedQuestionCount": 27,
+    "choiceQuestions": 25,
+    "constructedResponseQuestions": 2,
+    "assetsListed": [
+      "q02-fig1.png",
+      "q08-fig2.png",
+      "q10-fig3.png",
+      "q11-fig4.png",
+      "q12-fig5.png",
+      "q15-fig6.png",
+      "q16-fig7.png",
+      "q18-fig8.png",
+      "q19-fig9.png",
+      "q21-fig10.png",
+      "q22-fig11.png",
+      "q23-fig12.png",
+      "q27-fig13.png",
+      "q27-fig14.png",
+      "q27-fig15.png"
+    ]
+  },
+  "officialSources": {
+    "annualPage": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
+    "officialMathPaper": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+    "officialAnswerKey": "https://drive.google.com/file/d/1fxfOLQPMdCEMSuziD1qsQZg3vVOGt8df/view?usp=drive_link"
+  },
+  "importStatus": {
+    "sourceStructureInspected": true,
+    "q01to15ExistingDrafts": 15,
+    "q16to27Imported": 0,
+    "q16to27Remaining": 12,
+    "completeQuestionSetVerified": false,
+    "officialQuestionTextReconciliation": "pending",
+    "officialAnswerKeyReconciliation": "pending",
+    "originalFigureAssetsImported": 0,
+    "rightsReview": "pending",
+    "publishableRecords": 0
+  },
+  "notes": [
+    "This file registers the public structured secondary transcription and its associated grading/asset files; it does not copy the exam's full question text.",
+    "The dataset reports 27 math items: 25 single-choice and 2 constructed-response. Confirm the count and content against the official annual paper.",
+    "The existing q01-q15 records remain draft and do not count as verified records.",
+    "Before importing further full text or images, review applicable source terms and reproduction rights; keep question text, answer key, and image provenance explicit.",
+    "A dataset file being available does not itself establish official status, correctness, or permission to republish."
+  ]
+}
