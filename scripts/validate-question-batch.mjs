@@ -72,7 +72,16 @@ if (Array.isArray(questions)) {
       if (!primary || typeof primary !== "object") {
         errors.push(`${where}.sourceCitation.primarySource is required`);
       } else {
-        if (typeof primary.url !== "string" || !/^https?:\\/\\//i.test(primary.url)) {
+        let sourceUrlValid = false;
+        if (typeof primary.url === "string") {
+          try {
+            const parsedSourceUrl = new URL(primary.url);
+            sourceUrlValid = parsedSourceUrl.protocol === "https:" || parsedSourceUrl.protocol === "http:";
+          } catch {
+            sourceUrlValid = false;
+          }
+        }
+        if (!sourceUrlValid) {
           errors.push(`${where}.sourceCitation.primarySource.url must be an HTTP(S) URL`);
         }
         if (typeof primary.locator !== "string" || !primary.locator.trim()) {
