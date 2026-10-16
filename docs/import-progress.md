@@ -1,6 +1,6 @@
 # 試題匯入進度（持續更新）
 
-最後更新：2026-10-17（會考範圍校正、下一批整卷匯入排程）
+最後更新：2026-10-17（多科目、純文字優先批次排程）
 
 ## 進度摘要
 
@@ -55,6 +55,15 @@
 - 次級來源資料集的提交紀錄顯示該 bundle 包含 `exam.json`、`grading.json`、`manifest.json` 及題目圖檔；可先核對資料結構，但來源仍須與官方題本逐頁比對，且完成來源條款／重製權利審查。
 - 來源提交頁：<https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/be1276479c703fa81e63866bfdc635951bc0d681>。
 - **目前完成數仍為 0/1 卷**：本輪只能核實公開提交紀錄及檔案清單，未能取得完整題目 JSON payload，因此沒有新增題目內容，也不把來源清單計入題目匯入率。取得完整 payload 後，先做 JSON 結構／題數／圖檔參照檢查，再寫入整卷並逐題核對官方 PDF 與答案。
+
+
+## 多科目、純文字優先批次（2026-10-17）
+
+- 新增 `sources/text-first-multi-subject-batch.json`，將 5 個科目資料集放進同一批次排程：114 英語閱讀、114 國文、114 社會、115 國文，以及已存在草稿的 115 數學（只做校對，不重複匯入）。
+- 依來源資料集目前可確認的題數，排程總量為 208 題紀錄；**這是來源題數加總，不是已匯入題數**。本批次新增實際題目紀錄 0、官方核實 0，因為完整來源 JSON payload 仍無法由現有連線工具穩定取得。
+- 匯入策略已改為多科目並行，優先處理純文字題幹、選項與閱讀文章；圖像題先保留來源圖檔路徑／佔位標記，不因圖檔未處理而阻塞純文字題，但不能省略圖像依賴或自行猜測內容。
+- 114 英語閱讀來源提交頁確認有 `exam.json` 與 `grading.json`，並標示 43 題；114 國文來源頁記錄 42 題；114 社會來源 bundle 含多個圖檔；115 國文來源提交頁標示 42 題。這些均屬次級資料集來源證據，仍須與官方題本及答案核對。來源：<https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/67e75b8cfb3c787f73f5ed368537ae24a85a6706>、<https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/be1276479c703fa81e63866bfdc635951bc0d681>、<https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/840d1988908ef3747caaf3effc4d1a1933ecf2f8>、<https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/f71390e952dfac8dfff92e10b34f1152c14baa9f>。
+- 下一個實作阻塞點不是科目排程，而是取得可完整解析的來源 JSON；取得後要先做 JSON parse、題數檢查、重複題 ID 檢查、圖片引用檢查，再批次寫入。不可用搜尋摘要拼接假題目。
 
 ## 尚未完成
 
