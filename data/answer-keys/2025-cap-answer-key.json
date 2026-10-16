@@ -1,0 +1,544 @@
+{
+  "schemaVersion": "1.0.0",
+  "exam": {
+    "name": "國中教育會考",
+    "rocYear": 114,
+    "gregorianYear": 2025
+  },
+  "source": {
+    "title": "114年國中教育會考選擇題參考答案一覽表",
+    "url": "https://www.wincenter.com.tw/activity/wincenter/exam/2025/doc/114P_Answer.pdf",
+    "sourceType": "secondary-hosted-copy-of-answer-key",
+    "verificationStatus": "transcribed_from_search-indexed_pdf_text_needs_manual_review",
+    "note": "Answers are transcribed from the text extraction of a PDF answer table. Blank cells and subject-column alignment after question 30 need manual visual verification against the official CAP source before public production use."
+  },
+  "subjects": [
+    "chinese",
+    "englishReading",
+    "englishListening",
+    "mathematics",
+    "socialStudies",
+    "naturalSciences"
+  ],
+  "rows": [
+    {
+      "questionNumber": 1,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "D",
+        "englishListening": "A",
+        "mathematics": "C",
+        "socialStudies": "A",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 2,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "D",
+        "englishListening": "C",
+        "mathematics": "B",
+        "socialStudies": "A",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 3,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "C",
+        "englishListening": "C",
+        "mathematics": "C",
+        "socialStudies": "B",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 4,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "B",
+        "englishListening": "B",
+        "mathematics": "B",
+        "socialStudies": "B",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 5,
+      "answers": {
+        "chinese": "A",
+        "englishReading": "D",
+        "englishListening": "A",
+        "mathematics": "C",
+        "socialStudies": "B",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 6,
+      "answers": {
+        "chinese": "A",
+        "englishReading": "A",
+        "englishListening": "B",
+        "mathematics": "A",
+        "socialStudies": "C",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 7,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "A",
+        "englishListening": "A",
+        "mathematics": "A",
+        "socialStudies": "D",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 8,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "B",
+        "englishListening": "B",
+        "mathematics": "C",
+        "socialStudies": "C",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 9,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "D",
+        "englishListening": "C",
+        "mathematics": "A",
+        "socialStudies": "C",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 10,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "D",
+        "englishListening": "C",
+        "mathematics": "A",
+        "socialStudies": "B",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 11,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "A",
+        "englishListening": "B",
+        "mathematics": "B",
+        "socialStudies": "C",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 12,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "D",
+        "englishListening": "B",
+        "mathematics": "D",
+        "socialStudies": "D",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 13,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "D",
+        "englishListening": "A",
+        "mathematics": "A",
+        "socialStudies": "D",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 14,
+      "answers": {
+        "chinese": "A",
+        "englishReading": "A",
+        "englishListening": "C",
+        "mathematics": "C",
+        "socialStudies": "C",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 15,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "C",
+        "englishListening": "B",
+        "mathematics": "A",
+        "socialStudies": "C",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 16,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "C",
+        "englishListening": "A",
+        "mathematics": "D",
+        "socialStudies": "C",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 17,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "B",
+        "englishListening": "B",
+        "mathematics": "D",
+        "socialStudies": "A",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 18,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "A",
+        "englishListening": "C",
+        "mathematics": "B",
+        "socialStudies": "B",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 19,
+      "answers": {
+        "chinese": "A",
+        "englishReading": "B",
+        "englishListening": "B",
+        "mathematics": "C",
+        "socialStudies": "D",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 20,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "B",
+        "englishListening": "B",
+        "mathematics": "A",
+        "socialStudies": "C",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 21,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "B",
+        "englishListening": "C",
+        "mathematics": "D",
+        "socialStudies": "A",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 22,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "A",
+        "englishListening": "B",
+        "mathematics": "C",
+        "socialStudies": "C",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 23,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "C",
+        "englishListening": "D",
+        "mathematics": "A",
+        "socialStudies": "B",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 24,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "D",
+        "englishListening": "D",
+        "mathematics": "D",
+        "socialStudies": "A",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 25,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "C",
+        "englishListening": "B",
+        "mathematics": "D",
+        "socialStudies": "B",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 26,
+      "answers": {
+        "chinese": "A",
+        "englishReading": "C",
+        "englishListening": "A",
+        "mathematics": null,
+        "socialStudies": "D",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 27,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "A",
+        "englishListening": "D",
+        "mathematics": null,
+        "socialStudies": "D",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 28,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "D",
+        "englishListening": "B",
+        "mathematics": null,
+        "socialStudies": "B",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 29,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "C",
+        "englishListening": "B",
+        "mathematics": null,
+        "socialStudies": "D",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 30,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "D",
+        "englishListening": "C",
+        "mathematics": null,
+        "socialStudies": "A",
+        "naturalSciences": null
+      }
+    },
+    {
+      "questionNumber": 31,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "B",
+        "socialStudies": "A",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 32,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "D",
+        "socialStudies": "B",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 33,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "A",
+        "socialStudies": "D",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 34,
+      "answers": {
+        "chinese": "A",
+        "englishReading": "B",
+        "socialStudies": "C",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 35,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "C",
+        "socialStudies": "B",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 36,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "C",
+        "socialStudies": "A",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 37,
+      "answers": {
+        "chinese": "C",
+        "englishReading": "C",
+        "socialStudies": "C",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 38,
+      "answers": {
+        "chinese": "A",
+        "englishReading": "B",
+        "socialStudies": "A",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 39,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "C",
+        "socialStudies": "A",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 40,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "C",
+        "socialStudies": "D",
+        "naturalSciences": "A"
+      }
+    },
+    {
+      "questionNumber": 41,
+      "answers": {
+        "chinese": "D",
+        "englishReading": "A",
+        "socialStudies": "D",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 42,
+      "answers": {
+        "chinese": "B",
+        "englishReading": "B",
+        "socialStudies": "C",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 43,
+      "answers": {
+        "socialStudies": "A",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 44,
+      "answers": {
+        "socialStudies": "A",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 45,
+      "answers": {
+        "socialStudies": "D",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 46,
+      "answers": {
+        "socialStudies": "D",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 47,
+      "answers": {
+        "socialStudies": "D",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 48,
+      "answers": {
+        "socialStudies": "C",
+        "naturalSciences": "D"
+      }
+    },
+    {
+      "questionNumber": 49,
+      "answers": {
+        "socialStudies": "A",
+        "naturalSciences": "C"
+      }
+    },
+    {
+      "questionNumber": 50,
+      "answers": {
+        "socialStudies": "B",
+        "naturalSciences": "B"
+      }
+    },
+    {
+      "questionNumber": 51,
+      "answers": {
+        "socialStudies": "D"
+      }
+    },
+    {
+      "questionNumber": 52,
+      "answers": {
+        "socialStudies": "C"
+      }
+    },
+    {
+      "questionNumber": 53,
+      "answers": {
+        "socialStudies": "B"
+      }
+    },
+    {
+      "questionNumber": 54,
+      "answers": {
+        "socialStudies": "D"
+      }
+    }
+  ],
+  "rightsNote": "This file contains answer-key facts only, not question text. Verify source provenance and reuse requirements before production release."
+}
