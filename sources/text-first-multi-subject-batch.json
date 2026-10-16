@@ -161,7 +161,7 @@
     "questionRecordsVerifiedByThisBatch": 0,
     "importPercent": null,
     "verificationPercent": null,
-    "note": "本輪補登官方歷屆試題入口、115 年官方年度頁及 114 年學校公告參考頁（3/3，100%來源入口記錄）；這是來源發現，不是題目匯入。當前批次實際新增題目 0/208（0%），逐題官方核實 0/208（0%）。",
+    "note": "本輪新增核實官方來源頁面 2/2（100%）。實際新增題目 0/208（0%）；逐題官方核實 0/208（0%）；權利清查通過 0/208（0%）。尚未取得可供逐題解析的完整來源內容，故未建立虛構題目。",
     "totalQuestionsInCurrentBatch": 208,
     "existingDraftRecordsInCurrentBatch": 27,
     "firstTranscriptionRemaining": 181,
@@ -175,7 +175,9 @@
     "globalHistoricalCAPRemainingPercent": null,
     "globalTotalNote": "全歷屆各年度各科題數尚未完成盤點；208 僅為目前批次，不代表全歷屆總量。",
     "sourceLinksDiscovered": 3,
-    "sourceLinksDiscoveredPercent": 100
+    "sourceLinksDiscoveredPercent": 100,
+    "officialSourcePagesConfirmed": 2,
+    "officialSourcePagesConfirmedPercent": 100
   },
   "blockers": [
     "目前 GitHub 連線工具無法穩定取得完整 Hugging Face exam.json payload；沒有完整 payload 就不能可靠轉錄題目。",
@@ -189,6 +191,9 @@
     "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
     "officialYearPage115": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
     "additional114SchoolReference": "https://sljh.hcc.edu.tw/p/406-1034-491334,r1565.php?Lang=zh-tw",
-    "finding": "官方歷屆試題入口及學校公告可用於逐年核對試卷與答案；僅找到可下載試題不代表允許將完整題目文字再發布。此輪未取得可解析的完整 exam.json payload，故不增加題目紀錄。"
+    "finding": "核實官方國中教育會考網站有115年試題題本暨參考答案公告；學校公告列出國文、寫作、英語閱讀、英語聽力、數學、自然、社會等附件。此為來源存在性確認，不等同題目逐題核實或重製授權。",
+    "officialCapSite": "https://cap-rcpet.rcpet.edu.tw/",
+    "official115Announcement": "https://cap-rcpet.rcpet.edu.tw/",
+    "school115Reference": "https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php"
   }
 }
