@@ -1,0 +1,669 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "exam": "國中教育會考",
+    "rocYears": [
+      103,
+      115
+    ],
+    "gregorianYears": [
+      2014,
+      2026
+    ],
+    "yearCount": 13,
+    "exclude": "國中基測（ROC 90–102）",
+    "subjects": [
+      "國文",
+      "英語閱讀",
+      "英語聽力",
+      "數學",
+      "社會",
+      "自然",
+      "寫作測驗"
+    ]
+  },
+  "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
+  "secondaryDatasetRepository": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams",
+  "availabilitySummary": {
+    "cataloguedDatasetEntries": 13,
+    "yearsWithDatasetEntries": 3,
+    "yearsInScope": 13,
+    "questionTextImportedByThisCatalog": 0,
+    "officiallyVerifiedByThisCatalog": 0
+  },
+  "datasets": [
+    {
+      "rocYear": 113,
+      "gregorianYear": 2024,
+      "subject": "chinese",
+      "datasetId": "cap-113-chinese",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-113-chinese/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-113-chinese/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-113-chinese/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "chinese",
+      "datasetId": "cap-114-chinese",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-chinese/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "english-reading",
+      "datasetId": "cap-114-english-reading",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-english-reading/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-english-reading/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-english-reading/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "mathematics",
+      "datasetId": "cap-114-math",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-math/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-math/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-math/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "natural-sciences",
+      "datasetId": "cap-114-science",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-science/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-science/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-science/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "social-studies",
+      "datasetId": "cap-114-social",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-social/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "subject": "writing",
+      "datasetId": "cap-114-writing",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-writing/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-writing/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-114-writing/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "chinese",
+      "datasetId": "cap-115-chinese",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-chinese/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-chinese/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-chinese/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "english-reading",
+      "datasetId": "cap-115-english-reading",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-english-reading/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-english-reading/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-english-reading/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "mathematics",
+      "datasetId": "cap-115-math",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-math/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "natural-sciences",
+      "datasetId": "cap-115-science",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-science/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-science/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-science/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "social-studies",
+      "datasetId": "cap-115-social",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-social/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-social/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-social/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "subject": "writing",
+      "datasetId": "cap-115-writing",
+      "examJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-writing/bundle/exam.json",
+      "manifestJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-writing/bundle/manifest.json",
+      "gradingJson": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/resolve/main/cap-115-writing/bundle/grading.json",
+      "status": "public_secondary_dataset_catalogued_not_imported_into_question_bank",
+      "sourceQuality": "secondary_transcription_requires_official_pdf_reconciliation"
+    }
+  ],
+  "yearInventory": [
+    {
+      "rocYear": 103,
+      "gregorianYear": 2014,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 104,
+      "gregorianYear": 2015,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 105,
+      "gregorianYear": 2016,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 106,
+      "gregorianYear": 2017,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 107,
+      "gregorianYear": 2018,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 108,
+      "gregorianYear": 2019,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 109,
+      "gregorianYear": 2020,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 110,
+      "gregorianYear": 2021,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 111,
+      "gregorianYear": 2022,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 112,
+      "gregorianYear": 2023,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 113,
+      "gregorianYear": 2024,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_subject_inventory_pending",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 114,
+      "gregorianYear": 2025,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "structured_secondary_datasets_found_for_multiple_subjects_pending_full_import",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    },
+    {
+      "rocYear": 115,
+      "gregorianYear": 2026,
+      "exam": "國中教育會考",
+      "officialArchive": "https://cap.rcpet.edu.tw/examination.html",
+      "status": "official_year_page_checked_partial_math_draft_imported",
+      "subjects": [
+        {
+          "id": "chinese",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-reading",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "english-listening",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "mathematics",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "social-studies",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "natural-sciences",
+          "status": "not_yet_audited"
+        },
+        {
+          "id": "writing",
+          "status": "not_yet_audited"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "依使用者最新指示，實際匯入範圍改為國中教育會考（民國103–115年），不再將舊制國中基測列入目前匯入工作。",
+    "本目錄只登記找到的次級結構化資料集來源；不代表這些題目已複製進本倉庫或已完成核實。",
+    "CAP-113 目前此目錄只登記到國文資料集；CAP-114 與 CAP-115 登記國文、英語閱讀、數學、自然、社會、寫作六科。英語聽力需另查官方年度檔案。",
+    "CAP-103至CAP-112仍需逐年查官方歷屆頁，不能因未列次級資料集就推斷沒有官方題本。",
+    "整卷匯入優先：每科每年度應以完整卷為單位；完成後逐題核對官方題本、答案、圖檔及來源權利。"
+  ]
+}
