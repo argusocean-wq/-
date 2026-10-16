@@ -72,15 +72,8 @@ if (Array.isArray(questions)) {
       if (!primary || typeof primary !== "object") {
         errors.push(`${where}.sourceCitation.primarySource is required`);
       } else {
-        let sourceUrlValid = false;
-        if (typeof primary.url === "string") {
-          try {
-            const parsedSourceUrl = new URL(primary.url);
-            sourceUrlValid = parsedSourceUrl.protocol === "https:" || parsedSourceUrl.protocol === "http:";
-          } catch {
-            sourceUrlValid = false;
-          }
-        }
+        const sourceUrlValid = typeof primary.url === "string" &&
+          /^https?:\\/\\/[^\\s]+$/i.test(primary.url.trim());
         if (!sourceUrlValid) {
           errors.push(`${where}.sourceCitation.primarySource.url must be an HTTP(S) URL`);
         }
