@@ -165,6 +165,20 @@
         "rightsEvidence.reviewer"
       ],
       "note": "僅 rightsStatus=cleared 且 rightsEvidence 四欄完整才可通過；本輪沒有完整來源 payload，新增題目紀錄仍為 0。"
+    },
+    "perQuestionSourceCitations2026Math": {
+      "completed": 27,
+      "total": 27,
+      "percent": 100,
+      "questionLevelLocatorStatus": "question_number_present_pdf_page_pending",
+      "sourceTypes": [
+        "official_exam_paper_pdf",
+        "official_exam_index",
+        "secondary_structured_dataset_pinned_commit"
+      ],
+      "countsAsQuestionContentImport": false,
+      "countsAsOfficialQuestionVerification": false,
+      "note": "115 數學科第 1–27 題皆有來源引用及題號定位；頁碼與逐題原文仍待官方 PDF 核對。來源標註不等於重製權利清除或答案核實。"
     }
   },
   "yearStatus": [
@@ -198,7 +212,8 @@
     "Previously imported 2026 math records remain unverified draft records until question numbers, wording, figures, and official answers are reconciled.",
     "Registering a secondary dataset or source links does not count as question text import, official verification, or rights clearance.",
     "A full paper can be marked 100% transcribed only when all expected question records are present; this is separate from official verification and publishable status.",
-    "目前批次與進度文件以 CAP 民國 103–115 年為活躍範圍；若使用者再次明確擴大至舊制基測，需先同步更新 scope 與分母，不能混算。"
+    "目前批次與進度文件以 CAP 民國 103–115 年為活躍範圍；若使用者再次明確擴大至舊制基測，需先同步更新 scope 與分母，不能混算。",
+    "Every question record must include a source citation URL and a question-specific locator; missing citations fail structural validation."
   ],
   "historicalCoverageManifest": "sources/cap-only-historical-import-catalog.json",
   "nextBatchStrategy": "multi-subject parallel queue; prioritize text stems/options/reading passages; retain figure placeholders and asset paths for image-dependent questions"
