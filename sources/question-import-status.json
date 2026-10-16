@@ -131,6 +131,21 @@
       "completeSetTranscriptionPercent": 100,
       "officialVerificationPercent": 0,
       "note": "依相容既有資料欄位的預檢規則檢查題目紀錄；這是結構預檢，不是官方答案、來源權利或原始圖像核實。"
+    },
+    "metadataOnlyAuditTool": {
+      "completed": 1,
+      "total": 1,
+      "percent": 100,
+      "path": "scripts/audit-exam-bundle.mjs",
+      "meaning": "可讀取本機來源 exam.json，僅輸出題數、題型、文字／圖片／表格節點與資產參照數；不輸出題幹、選項、答案或圖像描述。"
+    },
+    "sourcePayloadInspection114Social": {
+      "sourceCommit": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/840d1988908ef3747caaf3effc4d1a1933ecf2f8",
+      "sourceExamJsonVisibleInDiff": true,
+      "declaredQuestionCount": 54,
+      "localPayloadImported": false,
+      "reason": "目前只完成公開來源頁／diff 結構確認；未把整份題幹與選項複製到倉庫。正式匯入前需確認可重製權利；可先做 metadata-only 結構稽核。",
+      "countsAsQuestionContentImport": false
     }
   },
   "yearStatus": [
