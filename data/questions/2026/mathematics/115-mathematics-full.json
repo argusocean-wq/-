@@ -1,0 +1,779 @@
+{
+  "schemaVersion": "1.0.0",
+  "exam": {
+    "id": "tw-cap-115-math",
+    "name": "國中教育會考",
+    "rocYear": 115,
+    "gregorianYear": 2026,
+    "subject": "mathematics",
+    "subjectLabel": "數學",
+    "durationMinutes": 80,
+    "totalQuestionRecords": 27,
+    "choiceQuestions": 25,
+    "constructedResponseQuestions": 2,
+    "totalPoints": 31
+  },
+  "source": {
+    "officialExamPage": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
+    "officialQuestionPaper": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+    "officialAnswerKey": "https://drive.google.com/file/d/1fxfOLQPMdCEMSuziD1qsQZg3vVOGt8df/view?usp=drive_link",
+    "secondaryStructuredDataset": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+    "datasetCommit": "d1f7e930cbae5c87855a73f9aab24e1bf3d39f6a"
+  },
+  "importStatus": "draft_full_paper_transcription_pending_reconciliation",
+  "batch": {
+    "questionNumbers": [
+      1,
+      27
+    ],
+    "importedCount": 27,
+    "knownTotalQuestions": 27,
+    "completeSet": true,
+    "transcriptionPercent": 100,
+    "verifiedQuestionCount": 0,
+    "verificationPercent": 0
+  },
+  "notes": [
+    "此檔將 2026 數學科 27 題整合成單一完整試卷資料檔，便於一次載入整張試卷。",
+    "第 1–15 題取自倉庫既有分批草稿；第 16–27 題依結構化次級資料逐題整理。部分複合題文與圖表描述已簡化，必須逐頁比對官方 PDF。",
+    "此檔已具備 27 個題目紀錄，但所有題目仍為草稿；官方答案表核對、圖檔原件匯入及解析驗證尚未完成。",
+    "不應把 100% 轉錄紀錄率解讀為 100% 官方核實率或可正式發布率。"
+  ],
+  "questions": [
+    {
+      "id": "tw-cap-115-math-q01",
+      "number": 1,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "解二元一次聯立方程式 { x + 2y = 5; 2x - 2y = 1 }，得 x 值為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "-4"
+        },
+        {
+          "id": "B",
+          "text": "-2"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "兩式相加得 3x = 6，因此 x = 2。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q02",
+      "number": 2,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "如圖（一），直角柱 ABCDEF 的底面為正三角形，圖中標示各頂點名稱。判斷此角柱中的 ∠ABC、∠BCF 的度數分別為何？",
+      "figureDescription": "直立三角柱 ABCDEF；上底面為正三角形 ABC，側稜 AD、BE、CF 互相平行且垂直於底面。原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "∠ABC = 90°，∠BCF = 90°"
+        },
+        {
+          "id": "B",
+          "text": "∠ABC = 60°，∠BCF = 60°"
+        },
+        {
+          "id": "C",
+          "text": "∠ABC = 90°，∠BCF = 60°"
+        },
+        {
+          "id": "D",
+          "text": "∠ABC = 60°，∠BCF = 90°"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正三角形內角為 60°；直角柱側稜垂直底面，因此 ∠BCF = 90°。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q03",
+      "number": 3,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "若 √504 的最簡根式為 a√b，則 a + b 之值為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "13"
+        },
+        {
+          "id": "B",
+          "text": "19"
+        },
+        {
+          "id": "C",
+          "text": "20"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "answer": "C",
+      "explanation": "√504 = √(36×14) = 6√14，因此 a+b=6+14=20。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q04",
+      "number": 4,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "已知甲袋中有三顆球，球上分別標記 2、3、4；乙袋中有三顆球，球上分別標記 3、4、5。阿翰打算從甲、乙兩袋中各抽出一球，若甲袋中每顆球被抽出的機會相等，乙袋中每顆球被抽出的機會相等，則抽出的兩球上的數字，總和為多少的機率最大？",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "總和 5、6、7、8、9 的組合數依序為 1、2、3、2、1；總和 7 的機率最大。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q05",
+      "number": 5,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "算式 2.45 × 98.7 − (−0.55) × 98.7 之值介於下列哪兩個數之間？",
+      "options": [
+        {
+          "id": "A",
+          "text": "150，200"
+        },
+        {
+          "id": "B",
+          "text": "200，250"
+        },
+        {
+          "id": "C",
+          "text": "250，300"
+        },
+        {
+          "id": "D",
+          "text": "300，350"
+        }
+      ],
+      "answer": "C",
+      "explanation": "提出公因數 98.7，得 (2.45+0.55)×98.7 = 3×98.7 = 296.1，介於 250 與 300 之間。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q06",
+      "number": 6,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "小彭的農園將收成的文旦根據每顆的重量分為小果、中果、大果，再根據每顆的品質分為良級、優級、特級，分類後各類別的總重量如下表。因為被分類為良級或大果的文旦不受喜愛，所以小彭僅將其餘的文旦都包裝成禮盒販售，求包裝成禮盒販售的文旦總共有多少公斤？",
+      "table": {
+        "caption": "表（一），單位：公斤",
+        "headers": [
+          "類別",
+          "良級",
+          "優級",
+          "特級",
+          "合計"
+        ],
+        "rows": [
+          [
+            "小果",
+            50,
+            180,
+            270,
+            500
+          ],
+          [
+            "中果",
+            20,
+            100,
+            80,
+            200
+          ],
+          [
+            "大果",
+            10,
+            40,
+            50,
+            100
+          ],
+          [
+            "合計",
+            80,
+            320,
+            400,
+            800
+          ]
+        ]
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": "620"
+        },
+        {
+          "id": "B",
+          "text": "630"
+        },
+        {
+          "id": "C",
+          "text": "700"
+        },
+        {
+          "id": "D",
+          "text": "720"
+        }
+      ],
+      "answer": "B",
+      "explanation": "良級或大果總重為 80+100−10=170 公斤（重疊的良級大果扣回一次）；800−170=630 公斤。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q07",
+      "number": 7,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "計算多項式 4x² − 3x − 5 除以 x + 2 後，所得商式與餘式兩者之和為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "4x + 6"
+        },
+        {
+          "id": "B",
+          "text": "4x + 10"
+        },
+        {
+          "id": "C",
+          "text": "−7x − 5"
+        },
+        {
+          "id": "D",
+          "text": "−11x − 1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "多項式除法得商式 4x−11、餘式 17，兩者相加為 4x+6。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q08",
+      "number": 8,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "有一培養皿上均勻分布細菌，圖（二）是培養皿與其俯視圖，生物學家在培養皿上選定四個圓形區域，區域面積越大所含細菌數越多。若圖中甲、乙、丙三個區域細菌的數量分別為 4.4×10⁵ 個、7.3×10⁶ 個、5.4×10⁷ 個，則下列何者可能是丁區域細菌的數量？",
+      "figureDescription": "培養皿俯視圖中四個圓形區域的面積由大到小依序為丙、丁、乙、甲；原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.7×10⁵ 個"
+        },
+        {
+          "id": "B",
+          "text": "1.7×10⁶ 個"
+        },
+        {
+          "id": "C",
+          "text": "1.7×10⁷ 個"
+        },
+        {
+          "id": "D",
+          "text": "1.7×10⁸ 個"
+        }
+      ],
+      "answer": "C",
+      "explanation": "丁的面積介於丙與乙之間，因此細菌數量需介於 7.3×10⁶ 與 5.4×10⁷ 之間；選項 C 符合。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q09",
+      "number": 9,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "已知一元二次方程式 2x(x+7) − 10(x+7) = 0 的兩根為 a、b，且 a>b，求 a+2b 之值為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "−13"
+        },
+        {
+          "id": "B",
+          "text": "−9"
+        },
+        {
+          "id": "C",
+          "text": "−4"
+        },
+        {
+          "id": "D",
+          "text": "−3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "原式可因式分解為 (x+7)(2x−10)=0，兩根為 5 與 −7；a=5、b=−7，故 a+2b=−9。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q10",
+      "number": 10,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "某書店舉辦優惠活動，購買的書原價合計滿 1100 元折扣 200 元。哥哥要買的書原價為 720 元，妹妹要買的書原價不到 1100 元；兩人合買即可折扣 200 元，並依原價比例分攤折扣後總金額。若哥哥分攤 600 元，妹妹要買的書原價為多少元？",
+      "figureDescription": "原題以兄妹對話圖呈現上述資訊；本批以文字描述替代原始圖檔。",
+      "options": [
+        {
+          "id": "A",
+          "text": "360"
+        },
+        {
+          "id": "B",
+          "text": "380"
+        },
+        {
+          "id": "C",
+          "text": "460"
+        },
+        {
+          "id": "D",
+          "text": "480"
+        }
+      ],
+      "answer": "D",
+      "explanation": "設妹妹原價為 x，哥哥分攤金額為 720/(720+x)×(720+x−200)=600，解得 x=480。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "allowed_exam_question_text_only",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q11",
+      "number": 11,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "A(a)、B(b)、P(a+b) 三點在數線上的位置如圖（四）所示。若要在數線上標示點 Q(b−a)，則關於 Q 點的位置，下列敘述何者正確？",
+      "figureDescription": "數線上由左至右依序為 P（座標 a+b）、A（座標 a）、B（座標 b）；原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "在 B 的右邊"
+        },
+        {
+          "id": "B",
+          "text": "介於 A、B 之間"
+        },
+        {
+          "id": "C",
+          "text": "介於 P、A 之間"
+        },
+        {
+          "id": "D",
+          "text": "在 P 的左邊"
+        }
+      ],
+      "answer": null,
+      "explanation": null,
+      "answerVerificationStatus": "pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q12",
+      "number": 12,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "△ABC 的邊上有三點 D、E、F，各點位置如圖（五）所示。若 BE = AF、∠BED = ∠AFC、ED = FC，則根據圖中標示的長度，求四邊形 ADEF 周長為何？",
+      "figureDescription": "三角形 ABC；D 位於 AB 上，E、F 位於 BC 上且順序為 B、E、F、C；圖示 AB=15、AC=9、BC=16。原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "20"
+        },
+        {
+          "id": "B",
+          "text": "22"
+        },
+        {
+          "id": "C",
+          "text": "24"
+        },
+        {
+          "id": "D",
+          "text": "25"
+        }
+      ],
+      "answer": null,
+      "explanation": null,
+      "answerVerificationStatus": "pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q13",
+      "number": 13,
+      "type": "single_choice",
+      "difficulty": "easy",
+      "points": 1,
+      "question": "若坐標平面上有一直線 L 與 x 軸平行，且 L 通過點 (−3, −1)，則 L 的方程式為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "x = −3"
+        },
+        {
+          "id": "B",
+          "text": "y = −3"
+        },
+        {
+          "id": "C",
+          "text": "x = −1"
+        },
+        {
+          "id": "D",
+          "text": "y = −1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "與 x 軸平行的水平直線，其 y 座標固定；通過 (−3,−1)，所以方程式為 y=−1。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q14",
+      "number": 14,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "已知坐標平面上有二次函數 y = −(x+5)²−20 的圖形，甲、乙兩人提出以下看法：甲：此函數圖形上某個點的 y 坐標為 −15。乙：此函數圖形上某個點的 y 坐標為 25。對於甲、乙兩人的看法，下列判斷何者正確？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲、乙皆正確"
+        },
+        {
+          "id": "B",
+          "text": "甲、乙皆錯誤"
+        },
+        {
+          "id": "C",
+          "text": "甲正確，乙錯誤"
+        },
+        {
+          "id": "D",
+          "text": "甲錯誤，乙正確"
+        }
+      ],
+      "answer": "B",
+      "explanation": "因為 (x+5)²≥0，所以 y≤−20；y=−15 與 y=25 都不可能出現在圖形上。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q15",
+      "number": 15,
+      "type": "single_choice",
+      "difficulty": "hard",
+      "points": 1,
+      "question": "圖（六）有一正六邊形 ABCDEF 與一正 n 邊形的部分圖形，其中 G、E、H、I 為正 n 邊形中連續的四個頂點，F 在 GE 上，C、D、H、I 四點共線。求 n 值為何？",
+      "figureDescription": "正六邊形 ABCDEF 與正 n 邊形部分圖形；GE 通過 F，C、D、H、I 共線，G、E、H、I 為正 n 邊形連續頂點。原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "15"
+        }
+      ],
+      "answer": null,
+      "explanation": null,
+      "answerVerificationStatus": "pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q16",
+      "number": 16,
+      "type": "single_choice",
+      "points": 1,
+      "prompt": "如圖（七），△ABC 中，∠ABC = 90°，D 點為 AC 的中點，E 點在 BD 上，AE 為 ∠BAC 的角平分線。若 ∠C = 40°，則 ∠AEB 的度數為何？",
+      "figure": {
+        "asset": "assets/q16-fig7.png",
+        "description": "直角三角形 ABC，直角在 B；D 為 AC 中點，E 在 BD 上，AE 為角平分線。"
+      },
+      "options": {
+        "A": "105",
+        "B": "110",
+        "C": "115",
+        "D": "120"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q17",
+      "number": 17,
+      "type": "single_choice",
+      "points": 1,
+      "prompt": "某國政府公布 2023 年的全國用電量為 2700 億度，並預估 2024～2030 年的全國用電量逐年增加，且每年增加的用電量為其前一年的 2.5%。根據預估，該國 2030 年的全國用電量為多少億度？",
+      "options": {
+        "A": "2700 × (1.025)^7",
+        "B": "2700 × (1.025)^8",
+        "C": "2700 + 7 × 2700 × 0.025",
+        "D": "2700 + 8 × 2700 × 0.025"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q18",
+      "number": 18,
+      "type": "single_choice",
+      "points": 1,
+      "prompt": "如圖（八），圓 O 與菱形 ABCD 中，A、B、D 在圓上，C 在圓內，O 在 AC 上。若圓 O 的半徑為 13，BD = 24，則 CO 的長度為多少？",
+      "figure": {
+        "asset": "assets/q18-fig8.png",
+        "description": "圓 O 內有菱形 ABCD，A、B、D 在圓上，C 在圓內；AC 通過圓心 O，BD 為水平對角線。"
+      },
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q19",
+      "number": 19,
+      "type": "single_choice",
+      "points": 1,
+      "prompt": "已知一圓上有 A、B、C、D 四點，其位置如圖（九）所示，其中弧 AB = 87°、弧 BC = 91°、弧 CD = 88°、弧 AD = 94°。若在此圓上找兩點 E、F，使得四邊形 ABEF 為長方形，則下列關於 E 點、F 點位置的敘述，何者正確？",
+      "figure": {
+        "asset": "assets/q19-fig9.png",
+        "description": "圓周上依序標有 A、B、C、D 四點。"
+      },
+      "options": {
+        "A": "E 在弧 BC 上，F 在弧 CD 上",
+        "B": "E 在弧 BC 上，F 在弧 AD 上",
+        "C": "E 在弧 CD 上，F 在弧 CD 上",
+        "D": "E 在弧 CD 上，F 在弧 AD 上"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q20",
+      "number": 20,
+      "type": "single_choice",
+      "points": 1,
+      "prompt": "已知正整數 M 的因數中，除了 M 之外最大的因數是 2² × 11；正整數 N 的因數中，除了 N 之外最大的因數是 3 × 13。甲認為 8 一定是 M 的因數；乙認為 9 一定是 N 的因數。對於甲、乙兩人的看法，下列判斷何者正確？",
+      "options": {
+        "A": "甲、乙皆正確",
+        "B": "甲、乙皆錯誤",
+        "C": "甲正確，乙錯誤",
+        "D": "甲錯誤，乙正確"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q21",
+      "number": 21,
+      "type": "single_choice",
+      "points": 1,
+      "prompt": "如圖（十），△ABC 與 △ADE 中，D 點在 △ABC 外，E 點在 AB 上，∠D = ∠DEA = ∠EAC = ∠C = 65°。若 BC 上有一點 F，AF 與直線 DE 相交於 P 點，且 BF = 5、FC = 8、BE = 6，則 AP 與 AF 的長度比為何？",
+      "figure": {
+        "asset": "assets/q21-fig10.png",
+        "description": "大三角形 ABC 的 AB 上有 E，外側小三角形 ADE 與大三角形共用 AE；BC 上有 F，AF 與 DE 交於 P。"
+      },
+      "options": {
+        "A": "4：5",
+        "B": "5：6",
+        "C": "6：7",
+        "D": "7：8"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q22",
+      "number": 22,
+      "type": "single_choice",
+      "points": 1,
+      "prompt": "如圖（十一），平行四邊形 ABCD 中，AB = 20、AD = 21。甲、乙想找一點 P，使 P 到 BC 的距離等於 P 到 AD 的距離，且 P 到 AB 的距離等於 P 到 CD 的距離。甲：連接 AC、BD，兩線段相交於 P；乙：作 ∠C、∠D 的角平分線，兩直線相交於 P。對於甲、乙的作法，下列判斷何者正確？",
+      "figure": {
+        "asset": "assets/q22-fig11.png",
+        "description": "傾斜的平行四邊形 ABCD。"
+      },
+      "options": {
+        "A": "甲、乙皆正確",
+        "B": "甲、乙皆錯誤",
+        "C": "甲正確，乙錯誤",
+        "D": "甲錯誤，乙正確"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q23",
+      "number": 23,
+      "type": "single_choice",
+      "points": 1,
+      "passage": "汽車時速錶的指示速率 V指 必須永不小於實際速率 V實，且 V指 − V實 ≤ V實/10 + 4。實際速率＝輪胎轉速 × 輪胎周長；指示速率＝儀器測出的輪胎轉速 × 儀器設定的輪胎周長。",
+      "prompt": "根據選文，時速錶符合法規的汽車行駛時，若指示速率為 120 公里／小時，則實際速率的最小值與最大值分別是多少公里／小時？（最小值無條件進入到個位，最大值無條件捨去到個位。）",
+      "figure": {
+        "asset": "assets/q23-fig12.png",
+        "description": "半圓形汽車時速錶，刻度由 0 至 220 km/h。"
+      },
+      "options": {
+        "A": "最小值 105，最大值 120",
+        "B": "最小值 106，最大值 120",
+        "C": "最小值 120，最大值 136",
+        "D": "最小值 120，最大值 137"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q24",
+      "number": 24,
+      "type": "single_choice",
+      "points": 1,
+      "passage": "汽車實際速率＝輪胎轉速 × 輪胎周長。若轉速以圈／小時計，周長以公里計，則結果為公里／小時。",
+      "prompt": "根據選文，某車輪胎轉速為 x 圈／分鐘，輪胎周長為 200 公分。若實際速率為 y 公里／小時，則 y 與 x 的關係為何？",
+      "options": {
+        "A": "y = 0.002x",
+        "B": "y = 0.12x",
+        "C": "y = 200x",
+        "D": "y = 12000x"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q25",
+      "number": 25,
+      "type": "single_choice",
+      "points": 1,
+      "passage": "汽車時速錶指示速率以儀器測得輪胎轉速乘以儀器設定的輪胎周長計算。",
+      "prompt": "甲車的儀器測出的輪胎轉速比實際轉速更高；乙車換上周長較小的新輪胎，但儀器仍設定原本輪胎周長。若兩車指示速率皆為 60 公里／小時，甲、乙實際速率分別為 p、q，則下列何者正確？",
+      "options": {
+        "A": "p > 60，q > 60",
+        "B": "p > 60，q < 60",
+        "C": "p < 60，q > 60",
+        "D": "p < 60，q < 60"
+      },
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q26",
+      "number": 26,
+      "type": "constructed_response",
+      "points": 3,
+      "prompt": "阿川想挑戰馬拉松，利用每圈 400 公尺跑道訓練。每週星期一、四訓練，第一週星期一跑 5 圈；每週星期四比當週星期一多跑 2 圈；之後每週星期一的圈數與前一週星期四相同，直到某日訓練距離超過 15 公里，就維持該圈數不再增加。請完整寫出解題過程並詳細解釋：(1) 第 2 週星期四跑幾圈？(2) 最早從第幾週的星期幾開始，當日訓練距離會超過 15 公里？",
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    },
+    {
+      "id": "tw-cap-115-math-q27",
+      "number": 27,
+      "type": "constructed_response",
+      "points": 3,
+      "prompt": "某場館有一組由三個相同五邊形沙發緊密拼成的 Y 字型沙發椅。俯視圖中 AB = 90 公分，BC、AE 皆為 130 公分，CD = DE，∠A = ∠B = 90°，D 為沙發椅中心。請完整寫出解題過程並詳細解釋：(1) 求圖中 ∠CDE。(2) 訂製正六邊形地毯，令其對角線交點與 D 重合，AB 與地毯一邊平行且至少相距 50 公分，求地毯邊長最小值（以根式呈現）。",
+      "figures": [
+        {
+          "asset": "assets/q27-fig13.png",
+          "description": "三個相同五邊形沙發拼成 Y 字形的立體圖。 "
+        },
+        {
+          "asset": "assets/q27-fig14.png",
+          "description": "Y 字型沙發俯視圖，三個全等五邊形繞中心 D 拼接。 "
+        },
+        {
+          "asset": "assets/q27-fig15.png",
+          "description": "正六邊形地毯上放置 Y 字型沙發，標示各方向至少 50 公分的間距。"
+        }
+      ],
+      "answer": null,
+      "verificationStatus": "draft_pending_official_pdf_and_answer_key"
+    }
+  ]
+}
