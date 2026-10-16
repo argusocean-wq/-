@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>會考題庫｜網頁測試台</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#172033;background:#f4f7fb;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}header{background:#101828;color:#fff;padding:28px max(20px,calc((100vw - 1040px)/2))}h1{font-size:clamp(1.45rem,4vw,2.15rem);margin:0 0 8px}header p{margin:0;color:#cbd5e1;line-height:1.6}.wrap{max-width:1040px;margin:auto;padding:22px 18px 50px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:white;border:1px solid #e1e7ef;border-radius:16px;padding:18px;box-shadow:0 4px 14px #15223808}.card h2{font-size:1rem;margin:0 0 14px}.metric{font-size:1.9rem;font-weight:750;letter-spacing:-.04em}.muted{color:#637083;font-size:.9rem;line-height:1.55}.bar{height:8px;background:#e8edf4;border-radius:99px;overflow:hidden;margin:10px 0}.bar span{display:block;height:100%;background:#64748b;width:0}.bar span.done{background:#16845b}.status{display:inline-flex;align-items:center;gap:7px;padding:5px 9px;border-radius:999px;background:#eef2f7;font-size:.8rem}.status:before{content:"";width:7px;height:7px;background:#64748b;border-radius:50%}.status.pass{background:#e7f7ef;color:#146c43}.status.pass:before{background:#16845b}.status.fail{background:#fff0f0;color:#a11}.status.fail:before{background:#c22}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.list{display:grid;gap:10px}.link{display:block;padding:12px;border:1px solid #e2e8f0;border-radius:10px;text-decoration:none;color:#1d4ed8;overflow-wrap:anywhere}.link:hover{background:#f8fafc}.checks{display:grid;gap:10px}.check{padding:10px 0;border-bottom:1px solid #edf0f5}.check:last-child{border:0}button{font:inherit;font-weight:650;border:0;border-radius:10px;padding:11px 14px;background:#182338;color:white;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.secondary{background:#e8edf4;color:#172033}footer{color:#687386;font-size:.82rem;margin-top:18px}code{overflow-wrap:anywhere}@media(max-width:680px){.grid{grid-template-columns:1fr}.wrap{padding:16px 12px 36px}header{padding:22px 16px}.metric{font-size:1.7rem}}
+</style>
+</head>
+<body>
+<header><h1>會考題庫｜網頁測試台</h1><p>Feature branch smoke test · 國中教育會考 103–115 年<br>此頁測試進度面板、來源連結、互動與窄螢幕版面；不展示或複製受保護的試題內容。</p></header>
+<main class="wrap">
+<section class="grid" aria-label="進度概況">
+<article class="card"><h2>本批次新增題目</h2><div class="metric" id="import-pct">0%</div><div class="bar"><span id="import-bar"></span></div><p class="muted" id="import-count">0 / 208 題；尚餘 208 題</p></article>
+<article class="card"><h2>逐題官方核實</h2><div class="metric" id="verify-pct">0%</div><div class="bar"><span id="verify-bar"></span></div><p class="muted">0 / 208 題；尚餘 208 題</p></article>
+<article class="card"><h2>權利審查通過</h2><div class="metric">0%</div><div class="bar"><span></span></div><p class="muted">0 / 208 題；不得把公開可讀視為重製授權。</p></article>
+<article class="card"><h2>網頁自我測試</h2><div class="row"><div class="metric" id="test-pct">待測</div><span class="status" id="test-status">未執行</span></div><p class="muted" id="test-summary">按下「執行網頁測試」檢查必要元素、進度資料、連結與行動版版面。</p></article>
+</section>
+<section class="grid" style="margin-top:14px">
+<article class="card"><h2>來源入口</h2><div class="list">
+<a class="link" href="https://cap-rcpet.rcpet.edu.tw/" target="_blank" rel="noopener noreferrer">國中教育會考官方網站 ↗</a>
+<a class="link" href="https://jajh.hcc.edu.tw/p/406-1006-541909%2Cr1.php" target="_blank" rel="noopener noreferrer">115 年試題與參考答案公告 ↗</a>
+<a class="link" href="https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/b6861984da182517cf19d2f36a827c612ff82ddb/README.md" target="_blank" rel="noopener noreferrer">來源資料集 README／權利說明 ↗</a>
+</div></article>
+<article class="card"><h2>本輪批次</h2><div class="checks">
+<div class="check"><div class="row"><strong>114 英語閱讀</strong><span class="status">待匯入</span></div><div class="muted">43 筆來源紀錄</div></div>
+<div class="check"><div class="row"><strong>114 國文</strong><span class="status">待匯入</span></div><div class="muted">42 筆來源紀錄</div></div>
+<div class="check"><div class="row"><strong>114 社會</strong><span class="status">待匯入</span></div><div class="muted">54 筆來源紀錄</div></div>
+<div class="check"><div class="row"><strong>115 國文</strong><span class="status">待匯入</span></div><div class="muted">42 筆來源紀錄</div></div>
+<div class="check"><div class="row"><strong>115 數學</strong><span class="status">草稿待核實</span></div><div class="muted">27 筆既有草稿</div></div>
+</div></article>
+</section>
+<section class="card" style="margin-top:14px"><h2>瀏覽器 Smoke Test</h2><p class="muted">此測試在目前瀏覽器執行，不會修改題庫資料或傳送表單。</p><div class="actions"><button id="run-tests" type="button">執行網頁測試</button><button class="secondary" id="reset-tests" type="button">重設結果</button></div><div id="test-results" class="checks" aria-live="polite" style="margin-top:12px"></div><footer>版本：feature/question-bank-import · 預期新增題目：0/208（0%）· 測試結果只代表此靜態頁面，不代表整個 GitHub Actions workflow 通過。</footer></section>
+</main>
+<script>
+(function(){
+ const tests=[
+  ["進度數據合理",()=>document.querySelector("#import-pct").textContent==="0%"&&document.querySelector("#verify-pct").textContent==="0%"],
+  ["新增題目剩餘數量",()=>document.querySelector("#import-count").textContent.includes("208")],
+  ["官方來源連結有效格式",()=>[...document.querySelectorAll("a.link")].length===3&&[...document.querySelectorAll("a.link")].every(a=>/^https:\/\//.test(a.href))],
+  ["外部連結安全屬性",()=>[...document.querySelectorAll('a[target="_blank"]')].every(a=>a.rel.includes("noopener"))],
+  ["行動版 viewport 已設定",()=>!!document.querySelector('meta[name="viewport"]')],
+  ["測試按鈕可互動",()=>!!document.querySelector("#run-tests")&&!!document.querySelector("#reset-tests")],
+  ["無水平溢出（目前視窗）",()=>document.documentElement.scrollWidth<=window.innerWidth+1]
+ ];
+ function run(){
+  const host=document.querySelector("#test-results");host.replaceChildren();let passed=0;
+  tests.forEach(([name,fn])=>{let ok=false;try{ok=!!fn()}catch(e){}if(ok)passed++;const row=document.createElement("div");row.className="check";const label=document.createElement("span");label.textContent=name;const badge=document.createElement("span");badge.className="status "+(ok?"pass":"fail");badge.textContent=ok?"PASS":"FAIL";row.append(label,badge);host.append(row)});
+  const pct=Math.round(passed/tests.length*100);document.querySelector("#test-pct").textContent=pct+"%";const status=document.querySelector("#test-status");status.className="status "+(passed===tests.length?"pass":"fail");status.textContent=passed===tests.length?"全部通過":passed+"/"+tests.length+" 通過";document.querySelector("#test-summary").textContent=passed+" / "+tests.length+" 項瀏覽器檢查通過。";
+ }
+ document.querySelector("#run-tests").addEventListener("click",run);
+ document.querySelector("#reset-tests").addEventListener("click",()=>{document.querySelector("#test-results").replaceChildren();document.querySelector("#test-pct").textContent="待測";const s=document.querySelector("#test-status");s.className="status";s.textContent="未執行";document.querySelector("#test-summary").textContent="按下「執行網頁測試」檢查必要元素、進度資料、連結與行動版版面。"});
+})();
+</script>
+</body>
+</html>
