@@ -46,14 +46,16 @@
       "percent": 100
     },
     "questionRecordsImported2026Math": {
-      "completed": 15,
+      "completed": 27,
       "total": 27,
-      "percent": 55.56,
-      "remaining": 12,
-      "remainingPercent": 44.44,
-      "completeSet": false,
-      "verificationStatus": "unverified_draft_reconciliation_required",
-      "countsAsVerifiedQuestionRecords": 0
+      "percent": 100,
+      "remaining": 0,
+      "remainingPercent": 0,
+      "completeSet": true,
+      "verificationStatus": "full_paper_draft_pending_official_reconciliation",
+      "countsAsVerifiedQuestionRecords": 0,
+      "verifiedPercent": 0,
+      "notes": "A consolidated 27-record draft file exists. Content transcription completeness is 100%; official wording, figures, answers, rights and publication checks remain pending."
     },
     "historicalYearIndex": {
       "completed": 26,
@@ -71,6 +73,17 @@
       "total": 1,
       "percent": 100,
       "meaning": "dataset source metadata registered only; not a question-content import"
+    },
+    "fullPaperDraft2026Math": {
+      "completed": 1,
+      "total": 1,
+      "percent": 100,
+      "questionRecords": 27,
+      "verifiedQuestionRecords": 0,
+      "remainingToVerify": 27,
+      "verificationPercent": 0,
+      "completeSetDraft": true,
+      "publishable": false
     }
   },
   "yearStatus": [
@@ -101,7 +114,8 @@
     "Overall target includes all historical junior-high Basic Competency Tests (ROC 90-102) and CAP exams (ROC 103-115).",
     "Do not calculate a complete historical question-bank percentage from the earlier 14-item 2025-2026 scope.",
     "Previously imported 2026 math records remain unverified draft records until question numbers, wording, figures, and official answers are reconciled.",
-    "Registering a secondary dataset or source links does not count as question text import, official verification, or rights clearance."
+    "Registering a secondary dataset or source links does not count as question text import, official verification, or rights clearance.",
+    "A full paper can be marked 100% transcribed only when all expected question records are present; this is separate from official verification and publishable status."
   ],
   "historicalCoverageManifest": "sources/historical-exam-coverage.json"
 }
