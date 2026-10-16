@@ -1,0 +1,49 @@
+name: Deploy responsive web test
+
+on:
+  push:
+    branches:
+      - feature/question-bank-import
+    paths:
+      - "web-test/**"
+      - ".github/workflows/deploy-web-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-web-test
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Validate static test page
+        run: |
+          test -s web-test/index.html
+          grep -q '<meta name="viewport"' web-test/index.html
+          grep -q 'id="run-tests"' web-test/index.html
+          grep -q 'prefers-reduced-motion' web-test/index.html
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload test page artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web-test
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
