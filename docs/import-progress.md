@@ -125,3 +125,11 @@
 - 工具刻意不輸出題幹、選項、閱讀文章、答案或圖像描述，避免將整份受著作權保護的試題內容再複製到報告中。
 - 本輪已確認 114 年社會科公開資料集提交頁的 `exam.json` diff 顯示結構化題目資料，來源標示 54 題；這是來源結構／題數確認，不代表題目已匯入、官方答案已核實或重製權利已清除。來源：<https://huggingface.co/datasets/JacobLinCool/taiwan-exams/commit/840d1988908ef3747caaf3effc4d1a1933ecf2f8>。
 - 本輪新增實際題目紀錄仍為 0；批次 208 題中草稿覆蓋 27/208（12.98%），待首次轉錄 181/208（87.02%）；官方核實 0/208（0%），待核實 208/208（100%）。
+
+
+## 權利篩選式匯入（2026-10-17）
+
+- 新增 `scripts/import-rights-cleared-questions.mjs`。使用方式：`node scripts/import-rights-cleared-questions.mjs <source-paper.json> <output-paper.json>`。
+- 採 fail-closed 規則：只有單題紀錄的 `rightsStatus` 明確等於 `cleared` 才會被複製；權利狀態缺失、含糊或未清除的題目一律略過。不得因資料集可公開讀取，就推定可重製。
+- 工具會輸出來源題數、符合條件題數、略過題數；若沒有任何符合條件的題目，不建立輸出檔。輸出後仍需執行 `scripts/validate-question-batch.mjs`，並獨立完成官方題本／答案核對。
+- **本輪新增實際題目紀錄：0。** 目前來源連線仍無法取得可解析的完整題目 JSON，因此無法逐題判定權利狀態，也不會猜測哪些題目可以匯入。權利篩選器已寫入，但不能算成題目匯入。
