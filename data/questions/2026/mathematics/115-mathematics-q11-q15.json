@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "exam": {
+    "name": "國中教育會考",
+    "rocYear": 115,
+    "gregorianYear": 2026
+  },
+  "subject": "mathematics",
+  "subjectLabel": "數學",
+  "batch": {
+    "questionNumbers": [
+      11,
+      15
+    ],
+    "importedCount": 5,
+    "knownTotalQuestions": 27,
+    "completeSet": false
+  },
+  "source": {
+    "officialExamPage": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
+    "officialQuestionPaper": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+    "structuredTranscriptionSource": "https://huggingface.co/datasets/JacobLinCool/taiwan-exams/blob/main/cap-115-math/bundle/exam.json",
+    "verificationStatus": "transcribed_from_structured_secondary_dataset_pending_visual_check_against_official_pdf"
+  },
+  "importStatus": "draft",
+  "rightsStatus": "pending_review",
+  "notes": [
+    "Questions 11-15 imported as structured draft records from the linked transcription source.",
+    "Image-based questions use text descriptions; original image assets are not yet bundled.",
+    "Answers remain unset until independently checked against the official answer key.",
+    "Do not publish or serve these records in production until official PDF and answer-key verification is complete."
+  ],
+  "questions": [
+    {
+      "id": "tw-cap-115-math-q11",
+      "number": 11,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "A(a)、B(b)、P(a+b) 三點在數線上的位置如圖（四）所示。若要在數線上標示點 Q(b−a)，則關於 Q 點的位置，下列敘述何者正確？",
+      "figureDescription": "數線上由左至右依序為 P（座標 a+b）、A（座標 a）、B（座標 b）；原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "在 B 的右邊"
+        },
+        {
+          "id": "B",
+          "text": "介於 A、B 之間"
+        },
+        {
+          "id": "C",
+          "text": "介於 P、A 之間"
+        },
+        {
+          "id": "D",
+          "text": "在 P 的左邊"
+        }
+      ],
+      "answer": null,
+      "explanation": null,
+      "answerVerificationStatus": "pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q12",
+      "number": 12,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "△ABC 的邊上有三點 D、E、F，各點位置如圖（五）所示。若 BE = AF、∠BED = ∠AFC、ED = FC，則根據圖中標示的長度，求四邊形 ADEF 周長為何？",
+      "figureDescription": "三角形 ABC；D 位於 AB 上，E、F 位於 BC 上且順序為 B、E、F、C；圖示 AB=15、AC=9、BC=16。原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "20"
+        },
+        {
+          "id": "B",
+          "text": "22"
+        },
+        {
+          "id": "C",
+          "text": "24"
+        },
+        {
+          "id": "D",
+          "text": "25"
+        }
+      ],
+      "answer": null,
+      "explanation": null,
+      "answerVerificationStatus": "pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q13",
+      "number": 13,
+      "type": "single_choice",
+      "difficulty": "easy",
+      "points": 1,
+      "question": "若坐標平面上有一直線 L 與 x 軸平行，且 L 通過點 (−3, −1)，則 L 的方程式為何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "x = −3"
+        },
+        {
+          "id": "B",
+          "text": "y = −3"
+        },
+        {
+          "id": "C",
+          "text": "x = −1"
+        },
+        {
+          "id": "D",
+          "text": "y = −1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "與 x 軸平行的水平直線，其 y 座標固定；通過 (−3,−1)，所以方程式為 y=−1。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q14",
+      "number": 14,
+      "type": "single_choice",
+      "difficulty": "medium",
+      "points": 1,
+      "question": "已知坐標平面上有二次函數 y = −(x+5)²−20 的圖形，甲、乙兩人提出以下看法：甲：此函數圖形上某個點的 y 坐標為 −15。乙：此函數圖形上某個點的 y 坐標為 25。對於甲、乙兩人的看法，下列判斷何者正確？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲、乙皆正確"
+        },
+        {
+          "id": "B",
+          "text": "甲、乙皆錯誤"
+        },
+        {
+          "id": "C",
+          "text": "甲正確，乙錯誤"
+        },
+        {
+          "id": "D",
+          "text": "甲錯誤，乙正確"
+        }
+      ],
+      "answer": "B",
+      "explanation": "因為 (x+5)²≥0，所以 y≤−20；y=−15 與 y=25 都不可能出現在圖形上。",
+      "answerVerificationStatus": "independently_solved_pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    },
+    {
+      "id": "tw-cap-115-math-q15",
+      "number": 15,
+      "type": "single_choice",
+      "difficulty": "hard",
+      "points": 1,
+      "question": "圖（六）有一正六邊形 ABCDEF 與一正 n 邊形的部分圖形，其中 G、E、H、I 為正 n 邊形中連續的四個頂點，F 在 GE 上，C、D、H、I 四點共線。求 n 值為何？",
+      "figureDescription": "正六邊形 ABCDEF 與正 n 邊形部分圖形；GE 通過 F，C、D、H、I 共線，G、E、H、I 為正 n 邊形連續頂點。原始圖檔尚未匯入。",
+      "options": [
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "15"
+        }
+      ],
+      "answer": null,
+      "explanation": null,
+      "answerVerificationStatus": "pending_official_key_check",
+      "status": "draft",
+      "rightsStatus": "pending_review",
+      "sourceUrl": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link"
+    }
+  ]
+}
