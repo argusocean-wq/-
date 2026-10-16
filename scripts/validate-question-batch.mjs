@@ -72,8 +72,8 @@ if (Array.isArray(questions)) {
       if (!primary || typeof primary !== "object") {
         errors.push(`${where}.sourceCitation.primarySource is required`);
       } else {
-        const sourceUrlValid = typeof primary.url === "string" &&
-          /^https?:\\/\\/[^\\s]+$/i.test(primary.url.trim());
+        const sourceUrl = typeof primary.url === "string" ? primary.url.trim() : "";
+        const sourceUrlValid = sourceUrl.startsWith("https://") || sourceUrl.startsWith("http://");
         if (!sourceUrlValid) {
           errors.push(`${where}.sourceCitation.primarySource.url must be an HTTP(S) URL`);
         }
