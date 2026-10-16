@@ -1,0 +1,17 @@
+{
+  "id": "example-not-a-real-exam-question",
+  "subject": "mathematics",
+  "difficulty": "easy",
+  "year": null,
+  "sourceTitle": "待填寫官方來源標題",
+  "sourceUrl": "https://cap.rcpet.edu.tw/examination.html",
+  "rightsStatus": "pending",
+  "status": "draft",
+  "question": "此為資料格式範例，不是真實歷屆試題。",
+  "options": [],
+  "answer": null,
+  "explanation": "",
+  "tags": [],
+  "reviewedBy": null,
+  "reviewedAt": null
+}
