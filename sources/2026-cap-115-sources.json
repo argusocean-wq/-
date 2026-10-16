@@ -7,7 +7,7 @@
   },
   "officialArchiveUrl": "https://cap.rcpet.edu.tw/examination.html",
   "officialHomepage": "https://cap-rcpet.rcpet.edu.tw/",
-  "sourceStatus": "official_year_page_identified_not_yet_transcribed",
+  "sourceStatus": "official_year_page_and_direct_file_links_verified_not_transcribed",
   "subjects": [
     {
       "id": "chinese",
@@ -46,8 +46,53 @@
     }
   ],
   "notes": [
-    "The official site lists the 115-year CAP question booklets and reference answers as an announcement dated 2026-05-17.",
-    "This file is a source registry, not a claim that the PDF/audio assets have been downloaded or transcribed.",
-    "Copying or republishing question text, diagrams, writing prompts, or audio requires separate rights review."
-  ]
+    "The official 115-year page directly lists the question papers, answer key, writing test, and English listening audio.",
+    "Direct links were followed from the official year page on 2026-10-17. Google Drive previews may require browser sign-in or JavaScript.",
+    "This registry confirms source links only; no question text has been transcribed or imported by this update.",
+    "Question text, diagrams, writing prompts, and audio must not be republished until reuse rights are reviewed."
+  ],
+  "officialYearPage": "https://cap.rcpet.edu.tw/exam/115/115exam.html",
+  "files": {
+    "answerKey": {
+      "label": "參考答案",
+      "url": "https://drive.google.com/file/d/1fxfOLQPMdCEMSuziD1qsQZg3vVOGt8df/view?usp=drive_link",
+      "status": "official_link_verified_not_transcribed"
+    },
+    "writing": {
+      "label": "寫作測驗",
+      "url": "https://drive.google.com/file/d/1NceEHPUXT0fZo6UgdCuSdGApQ4embM0t/view?usp=drive_link",
+      "status": "official_link_verified_not_transcribed"
+    },
+    "chinese": {
+      "label": "國文",
+      "url": "https://drive.google.com/file/d/1FQtq4_a4GTsTKURdzPhDkKmONKRXtTJ9/view?usp=drive_link",
+      "status": "official_link_verified_not_transcribed"
+    },
+    "english": {
+      "label": "英語（閱讀）",
+      "url": "https://drive.google.com/file/d/1pzRZpkZEBg4x7GNTAIrdfGJCxNSKgok-/view?usp=drive_link",
+      "status": "official_link_verified_not_transcribed"
+    },
+    "englishListening": {
+      "label": "英語（聽力）",
+      "url": "https://drive.google.com/file/d/1zRjsoyQhLRJfmmHtBJfi5qJa6ND1uVJ6/view?usp=drive_link",
+      "format": "zip",
+      "status": "official_link_verified_not_transcribed"
+    },
+    "mathematics": {
+      "label": "數學",
+      "url": "https://drive.google.com/file/d/1G-grfVw1NldMD3TRG-7Lco-yOuaoTKoK/view?usp=drive_link",
+      "status": "official_link_verified_not_transcribed"
+    },
+    "socialStudies": {
+      "label": "社會",
+      "url": "https://drive.google.com/file/d/1ITxBlFhNSIbg1u1C7FrU2ODk951wt-RT/view?usp=drive_link",
+      "status": "official_link_verified_not_transcribed"
+    },
+    "naturalSciences": {
+      "label": "自然",
+      "url": "https://drive.google.com/file/d/1ZJNPG9Wz3zuI8UkPGUY50URejxxZYmQ8/view?usp=drive_link",
+      "status": "official_link_verified_not_transcribed"
+    }
+  }
 }
