@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1746a2">
+<title>會考練習室｜國中線上題庫</title>
+<style>
+:root{--blue:#1746a2;--blue2:#2764d7;--ink:#17233b;--muted:#66738a;--bg:#f4f7fc;--line:#e3e9f3;--white:#fff;--green:#16794b;--red:#b42318}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;line-height:1.6}
+header{background:linear-gradient(120deg,#153c8a,#2764d7);color:white;padding:24px max(18px,calc((100vw - 1120px)/2));}
+header .eyebrow{opacity:.8;font-size:.85rem;letter-spacing:.08em}h1{margin:4px 0;font-size:clamp(1.6rem,4vw,2.25rem)}header p{margin:4px 0 0;opacity:.9}
+main{max-width:1120px;margin:24px auto;padding:0 18px 48px}.layout{display:grid;grid-template-columns:290px 1fr;gap:20px}.panel,.card{background:var(--white);border:1px solid var(--line);border-radius:18px;box-shadow:0 5px 18px #203b6610}.panel{padding:20px;height:max-content}.card{padding:clamp(18px,3vw,30px)}
+h2{font-size:1.12rem;margin:0 0 14px}label{display:block;font-size:.9rem;font-weight:650;margin:13px 0 6px}select,input[type=number]{width:100%;padding:11px 12px;border:1px solid #cbd5e5;border-radius:10px;background:white;color:var(--ink);font:inherit}
+button{font:inherit;border:0;border-radius:11px;padding:11px 15px;cursor:pointer;font-weight:700;transition:.15s}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #9cbcff;outline-offset:2px}.primary{background:var(--blue);color:white;width:100%;margin-top:18px}.primary:hover{background:var(--blue2)}.secondary{background:#edf2fc;color:var(--blue)}.danger{background:#fff0ef;color:var(--red)}button:disabled{opacity:.45;cursor:not-allowed}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}.stat{padding:12px;border-radius:12px;background:#f4f7fc}.stat small{display:block;color:var(--muted)}.stat strong{font-size:1.3rem}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:.92rem}.progress{height:7px;background:#e7edf7;border-radius:20px;overflow:hidden;margin:12px 0 24px}.progress div{height:100%;background:var(--blue2);width:0;transition:width .2s}
+.question-title{font-size:1.25rem;font-weight:750;white-space:pre-wrap;margin:20px 0}.option{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:13px;padding:13px 14px;margin:10px 0;cursor:pointer}.option:hover{border-color:#91ade7;background:#f8faff}.option.selected{border-color:var(--blue2);background:#eef4ff}.letter{display:grid;place-items:center;flex:0 0 28px;height:28px;border-radius:50%;background:#edf1f8;font-weight:800;color:#3b4a65}.option.selected .letter{background:var(--blue);color:white}.option input{position:absolute;opacity:0;pointer-events:none}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:24px}.nav button{min-width:100px}.hidden{display:none!important}.chip{display:inline-block;background:#edf3ff;color:#214da0;padding:4px 9px;border-radius:20px;font-size:.8rem;font-weight:700}.muted{color:var(--muted)}.result-score{font-size:3rem;font-weight:850;letter-spacing:-.04em}.result-list{display:grid;gap:10px;margin-top:20px}.result-item{padding:14px;border:1px solid var(--line);border-radius:12px}.correct{color:var(--green);font-weight:750}.incorrect{color:var(--red);font-weight:750}.history-row{padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.panel{order:2}.stats{gap:7px}.stat{padding:9px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">TAIWAN JUNIOR HIGH SCHOOL EXAM PREP</div><h1>會考練習室</h1><p>依科目與年級抽題・即時批改・錯題重練</p></header>
+<main><div class="layout">
+<aside class="panel">
+<h2>設定練習</h2>
+<label for="grade">年級</label><select id="grade"><option value="全部">全部年級</option><option>國一</option><option>國二</option><option>國三</option></select>
+<label for="subject">科目</label><select id="subject"><option value="全部">全部科目</option><option>國文</option><option>英語</option><option>數學</option><option>社會</option><option>自然</option><option>寫作測驗</option><option>英語聽力</option></select>
+<label for="unit">單元</label><select id="unit"><option value="全部">全部單元</option></select>
+<label for="count">抽題數量</label><select id="count"><option>10</option><option>20</option><option selected>50</option><option>100</option><option value="全部">全部符合題目</option></select>
+<label for="mode">練習模式</label><select id="mode"><option value="normal">一般隨機練習</option><option value="wrong">錯題重練</option></select>
+<button class="primary" id="start">開始測驗</button>
+<p class="muted" id="poolInfo" style="font-size:.85rem;margin:12px 0 0">正在載入題庫…</p>
+<hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+<h2>本機學習紀錄</h2><div id="history"></div><button class="secondary" id="clearHistory" style="width:100%;margin-top:12px">清除本機紀錄</button>
+</aside>
+<section>
+<div class="stats"><div class="stat"><small>題庫總題數</small><strong id="total">—</strong></div><div class="stat"><small>已完成測驗</small><strong id="sessions">0</strong></div><div class="stat"><small>平均正確率</small><strong id="average">—</strong></div></div>
+<div class="card" id="welcome"><span class="chip">開始準備</span><h2 style="font-size:1.55rem;margin-top:14px">每天練習一點，穩定累積實力。</h2><p class="muted">選擇年級、科目與題數後，系統會從題庫隨機抽題。答案與測驗紀錄只保存在這個瀏覽器中。</p><p>目前題庫標示為原創練習題，並非歷屆會考原題。</p></div>
+<div class="card hidden" id="quiz"><div class="toolbar"><span id="qMeta"></span><span id="qNumber"></span></div><div class="progress"><div id="bar"></div></div><div class="question-title" id="qText"></div><div id="options"></div><div class="nav"><button class="secondary" id="prev">上一題</button><button class="secondary" id="next">下一題</button><button class="primary" id="submit" style="width:auto;margin:0">交卷</button></div></div>
+<div class="card hidden" id="result"><div class="toolbar"><span class="chip">測驗結果</span><button class="secondary" id="back">回到設定</button></div><div class="result-score" id="score"></div><div id="resultSummary"></div><div class="result-list" id="review"></div><button class="primary" id="redo" style="margin-top:20px">再測一次（重新抽題）</button></div>
+</section></div></main>
+<script>
+const $=id=>document.getElementById(id);
+let allQuestions=[],session=[],answers={},index=0,lastConfig=null;
+const LETTERS=["A","B","C","D"];
+const safeRead=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
+const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value))}catch{}};
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function history(){return safeRead("exam-history",[])}
+function wrongIds(){return safeRead("exam-wrong-ids",[])}
+function filtered(){let list=allQuestions;const g=$("grade").value,s=$("subject").value,u=$("unit").value;if(g!=="全部")list=list.filter(q=>q.grade===g);if(s!=="全部")list=list.filter(q=>q.subject===s);if(u!=="全部")list=list.filter(q=>q.unit===u);if($("mode").value==="wrong"){const ids=new Set(wrongIds());list=list.filter(q=>ids.has(String(q.id)))}return list}
+function updateUnits(){const old=$("unit").value;const g=$("grade").value,s=$("subject").value;let list=allQuestions;if(g!=="全部")list=list.filter(q=>q.grade===g);if(s!=="全部")list=list.filter(q=>q.subject===s);const units=[...new Set(list.map(q=>q.unit||"未分類"))].sort((a,b)=>a.localeCompare(b,"zh-Hant"));$("unit").innerHTML='<option value="全部">全部單元</option>'+units.map(u=>`<option value="${esc(u)}">${esc(u)}</option>`).join("");if(units.includes(old))$("unit").value=old}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function refreshStats(){const h=history();$("sessions").textContent=h.length;$("average").textContent=h.length?Math.round(h.reduce((a,x)=>a+x.rate,0)/h.length)+"%":"—";$("history").innerHTML=h.length?h.slice(-5).reverse().map(x=>`<div class="history-row"><strong>${x.rate}%</strong> · ${x.correct}/${x.total} 題<br><span class="muted">${esc(x.date)} · ${esc(x.subject)}</span></div>`).join(""):'<p class="muted" style="font-size:.88rem">完成測驗後會顯示在這裡。</p>'}
+function startQuiz(){const pool=filtered();if(!pool.length){alert("這個條件下沒有題目。請改選科目，或先完成一般測驗累積錯題。");return}const n=$("count").value==="全部"?pool.length:Math.min(Number($("count").value),pool.length);session=shuffle(pool).slice(0,n);answers={};index=0;lastConfig={grade:$("grade").value,subject:$("subject").value,unit:$("unit").value,count:$("count").value,mode:$("mode").value};$("welcome").classList.add("hidden");$("result").classList.add("hidden");$("quiz").classList.remove("hidden");renderQuestion()}
+function renderQuestion(){const q=session[index];$("qMeta").textContent=[q.grade,q.subject,q.unit].filter(Boolean).join("・");$("qNumber").textContent=`第 ${index+1} / ${session.length} 題`; $("bar").style.width=((index+1)/session.length*100)+"%";$("qText").textContent=q.question;$("options").innerHTML=q.options.map((o,i)=>`<label class="option ${answers[q.id]===i?"selected":""}"><input type="radio" name="answer" value="${i}" ${answers[q.id]===i?"checked":""}><span class="letter">${LETTERS[i]}</span><span>${esc(o)}</span></label>`).join("");[...$("options").querySelectorAll(".option")].forEach((el,i)=>el.addEventListener("click",()=>{answers[q.id]=i;renderQuestion()}));$("prev").disabled=index===0;$("next").disabled=index===session.length-1;$("submit").textContent=index===session.length-1?"交卷":"交卷"; }
+function submitQuiz(){const unanswered=session.filter(q=>answers[q.id]===undefined).length;if(unanswered&&!confirm(`還有 ${unanswered} 題未作答，確定要交卷嗎？`))return;const correct=session.filter(q=>answers[q.id]===q.answer).length;const rate=Math.round(correct/session.length*100);const date=new Date().toLocaleString("zh-TW");const subject=$("subject").value==="全部"?"全部科目":$("subject").value;const h=history();h.push({date,correct,total:session.length,rate,subject});save("exam-history",h.slice(-100));const wrong=new Set(wrongIds());session.forEach(q=>{if(answers[q.id]!==q.answer)wrong.add(String(q.id));else wrong.delete(String(q.id))});save("exam-wrong-ids",[...wrong]);$("quiz").classList.add("hidden");$("result").classList.remove("hidden");$("score").textContent=rate+"%";$("resultSummary").textContent=`答對 ${correct} 題，答錯 ${session.length-correct} 題；共 ${session.length} 題。`; $("review").innerHTML=session.map((q,i)=>{const a=answers[q.id],ok=a===q.answer;return `<div class="result-item"><div class="${ok?"correct":"incorrect"}">${ok?"✓ 答對":"✕ 答錯"} · 第 ${i+1} 題</div><p><strong>${esc(q.question)}</strong></p><p>你的答案：${a===undefined?"未作答":LETTERS[a]+"．"+esc(q.options[a])}</p><p>正確答案：<strong>${LETTERS[q.answer]}．${esc(q.options[q.answer])}</strong></p>${q.explanation?`<p class="muted">解析：${esc(q.explanation)}</p>`:""}</div>`}).join("");refreshStats()}
+$("start").addEventListener("click",startQuiz);$("prev").addEventListener("click",()=>{if(index>0){index--;renderQuestion()}});$("next").addEventListener("click",()=>{if(index<session.length-1){index++;renderQuestion()}});$("submit").addEventListener("click",submitQuiz);$("back").addEventListener("click",()=>{$("result").classList.add("hidden");$("welcome").classList.remove("hidden")});$("redo").addEventListener("click",startQuiz);$("grade").addEventListener("change",updateUnits);$("subject").addEventListener("change",updateUnits);$("mode").addEventListener("change",()=>{$("poolInfo").textContent=`目前符合條件：${filtered().length} 題`});$("clearHistory").addEventListener("click",()=>{if(confirm("確定清除測驗紀錄與錯題本？")){localStorage.removeItem("exam-history");localStorage.removeItem("exam-wrong-ids");refreshStats()}})
+fetch("./data/questions.json").then(r=>{if(!r.ok)throw Error("題庫檔案讀取失敗");return r.json()}).then(data=>{allQuestions=data;$("total").textContent=data.length;updateUnits();$("poolInfo").textContent=`目前符合條件：${filtered().length} 題`;refreshStats()}).catch(()=>{$("total").textContent="載入失敗";$("poolInfo").textContent="請確認 data/questions.json 已放在網站根目錄的 data 資料夾中。"})
+</script></body></html>
