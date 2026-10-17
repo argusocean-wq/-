@@ -5,7 +5,9 @@ on:
     branches: ["main"]
     paths:
       - "index.html"
-      - "data/questions.json"
+      - "data/**"
+      - "manifest.webmanifest"
+      - "sw.js"
       - ".github/workflows/quiz-validation.yml"
   workflow_dispatch:
 
@@ -17,32 +19,49 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate question-bank schema and JavaScript syntax
+      - name: Validate question bank, product interactions, PWA files, and JavaScript
         shell: bash
         run: |
           python - <<'PY'
           import json, pathlib, re, collections
           root = pathlib.Path(".")
           questions = json.loads((root / "data/questions.json").read_text(encoding="utf-8"))
-          assert len(questions) == 500, f"Expected 500 questions, found {len(questions)}"
+          assert len(questions) >= 560, f"Expected at least 560 questions, found {len(questions)}"
           seen = set()
           for i, q in enumerate(questions, 1):
-              for field in ("id", "grade", "subject", "unit", "question", "options", "answer"):
+              for field in ("id", "grade", "subject", "unit", "question", "options", "answer", "difficulty", "year", "sourceType"):
                   assert field in q, f"Question {i} missing {field}"
               assert isinstance(q["options"], list) and len(q["options"]) == 4, f"Question {i} must have four options"
               assert isinstance(q["answer"], int) and 0 <= q["answer"] <= 3, f"Question {i} has invalid answer index"
-              assert q["question"].strip(), f"Question {i} has empty stem"
+              assert str(q["question"]).strip(), f"Question {i} has empty stem"
               key = str(q.get("sourceFile", "")) + "::" + str(q["id"])
               assert key not in seen, f"Duplicate question key {key}"
               seen.add(key)
+          assert sum(bool(str(q.get("explanation", "")).strip()) for q in questions) >= 60, "Expected imported explanations for the new batch"
+          subjects = collections.Counter(q["subject"] for q in questions)
+          for name, expected in {"國文": 112, "英語": 112, "數學": 132, "社會": 102, "自然": 102}.items():
+              assert subjects[name] == expected, f"Subject count mismatch for {name}: {subjects[name]}"
           html = (root / "index.html").read_text(encoding="utf-8")
           scripts = re.findall(r"<script>(.*?)</script>", html, re.S)
           assert scripts, "No inline application script found"
           pathlib.Path("/tmp/quiz-app.js").write_text("\n".join(scripts), encoding="utf-8")
-          for required in ("function questionKey", "function resumeQuiz", "function updatePoolInfo", "function submitQuiz", "exam-active-session"):
+          for required in (
+              "function questionKey", "function weightedPick", "function resumeQuiz",
+              "function updatePoolPreview", "function submitQuiz", "function finishQuiz",
+              "function renderReport", "function exportBackup", "function importQuestionBank",
+              "function saveMetadata", "function tickTimer", "function getUnansweredIndexes",
+              "exam-question-stats", "exam-active-session", "navigator.serviceWorker.register",
+              "id=\"unansweredModal\"", "id=\"difficultyFilter\"", "id=\"yearFilter\""
+          ):
               assert required in html, f"Missing expected interaction: {required}"
-          print("Questions:", len(questions))
-          print("Subjects:", dict(collections.Counter(q["subject"] for q in questions)))
-          print("HTML interaction checks passed.")
+          for filename in ("manifest.webmanifest", "sw.js", "icon.svg"):
+              assert (root / filename).is_file(), f"Missing PWA file: {filename}"
+          manifest = json.loads((root / "manifest.webmanifest").read_text(encoding="utf-8"))
+          assert manifest["start_url"] == "./" and manifest["scope"] == "./", "PWA scope must work on project Pages"
+          print("Validated questions:", len(questions))
+          print("Subject counts:", dict(subjects))
+          print("Questions with explanations:", sum(bool(str(q.get("explanation", "")).strip()) for q in questions))
+          print("All interaction and PWA file checks passed.")
           PY
           node --check /tmp/quiz-app.js
+          node --check sw.js
