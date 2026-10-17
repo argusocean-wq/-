@@ -1,0 +1,37 @@
+{
+  "source_archive": "會考練習題_第一批60題.zip",
+  "previous_bank_count": 500,
+  "new_batch_count": 60,
+  "merged_count": 560,
+  "new_subject_counts": {
+    "國文": 12,
+    "英語": 12,
+    "數學": 12,
+    "社會": 12,
+    "自然": 12
+  },
+  "all_subject_counts": {
+    "國文": 112,
+    "英語": 112,
+    "數學": 132,
+    "社會": 102,
+    "自然": 102
+  },
+  "grade_counts": {
+    "國一": 188,
+    "國二": 189,
+    "國三": 183
+  },
+  "new_batch_grade_counts": {
+    "國一": 20,
+    "國二": 21,
+    "國三": 19
+  },
+  "questions_with_explanations": 60,
+  "new_batch_questions_with_explanations": 60,
+  "difficulty_marked": 0,
+  "year_marked": 0,
+  "same_subject_same_stem_variants": 3,
+  "variant_policy": "保留 3 組新舊同科目相同題幹的選項變體；實際抽題時同一份測驗只抽取其中一個版本，優先使用有解析與較完整分類的版本。",
+  "source_policy": "新上傳的 60 題在 ZIP 說明中標示為原創會考風格練習題，非歷屆原題。舊 500 題標示為使用者匯入、來源待核對。未標示年度與難度保留未知。"
+}
