@@ -1,0 +1,48 @@
+name: Validate exam question bank
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "index.html"
+      - "data/questions.json"
+      - ".github/workflows/quiz-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate question-bank schema and JavaScript syntax
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, pathlib, re, collections
+          root = pathlib.Path(".")
+          questions = json.loads((root / "data/questions.json").read_text(encoding="utf-8"))
+          assert len(questions) == 500, f"Expected 500 questions, found {len(questions)}"
+          seen = set()
+          for i, q in enumerate(questions, 1):
+              for field in ("id", "grade", "subject", "unit", "question", "options", "answer"):
+                  assert field in q, f"Question {i} missing {field}"
+              assert isinstance(q["options"], list) and len(q["options"]) == 4, f"Question {i} must have four options"
+              assert isinstance(q["answer"], int) and 0 <= q["answer"] <= 3, f"Question {i} has invalid answer index"
+              assert q["question"].strip(), f"Question {i} has empty stem"
+              key = str(q.get("sourceFile", "")) + "::" + str(q["id"])
+              assert key not in seen, f"Duplicate question key {key}"
+              seen.add(key)
+          html = (root / "index.html").read_text(encoding="utf-8")
+          scripts = re.findall(r"<script>(.*?)</script>", html, re.S)
+          assert scripts, "No inline application script found"
+          pathlib.Path("/tmp/quiz-app.js").write_text("\n".join(scripts), encoding="utf-8")
+          for required in ("function questionKey", "function resumeQuiz", "function updatePoolInfo", "function submitQuiz", "exam-active-session"):
+              assert required in html, f"Missing expected interaction: {required}"
+          print("Questions:", len(questions))
+          print("Subjects:", dict(collections.Counter(q["subject"] for q in questions)))
+          print("HTML interaction checks passed.")
+          PY
+          node --check /tmp/quiz-app.js
