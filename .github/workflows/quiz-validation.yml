@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate question bank, product interactions, PWA files, and JavaScript
+      - name: Validate question bank, study interactions, PWA files, and JavaScript
         shell: bash
         run: |
           python - <<'PY'
@@ -37,21 +37,24 @@ jobs:
               key = str(q.get("sourceFile", "")) + "::" + str(q["id"])
               assert key not in seen, f"Duplicate question key {key}"
               seen.add(key)
-          assert sum(bool(str(q.get("explanation", "")).strip()) for q in questions) >= 60, "Expected imported explanations for the new batch"
+          explanations = sum(bool(str(q.get("explanation", "")).strip()) for q in questions)
+          assert explanations >= 60, f"Expected imported explanations for the new batch; found {explanations}"
           subjects = collections.Counter(q["subject"] for q in questions)
-          for name, expected in {"國文": 112, "英語": 112, "數學": 132, "社會": 102, "自然": 102}.items():
-              assert subjects[name] == expected, f"Subject count mismatch for {name}: {subjects[name]}"
+          minimums = {"國文": 112, "英語": 112, "數學": 132, "社會": 102, "自然": 102}
+          for name, minimum in minimums.items():
+              assert subjects[name] >= minimum, f"Subject count unexpectedly decreased for {name}: {subjects[name]}"
           html = (root / "index.html").read_text(encoding="utf-8")
           scripts = re.findall(r"<script>(.*?)</script>", html, re.S)
           assert scripts, "No inline application script found"
           pathlib.Path("/tmp/quiz-app.js").write_text("\n".join(scripts), encoding="utf-8")
           for required in (
-              "function questionKey", "function weightedPick", "function resumeQuiz",
-              "function updatePoolPreview", "function submitQuiz", "function finishQuiz",
-              "function renderReport", "function exportBackup", "function importQuestionBank",
-              "function saveMetadata", "function tickTimer", "function getUnansweredIndexes",
-              "exam-question-stats", "exam-active-session", "navigator.serviceWorker.register",
-              "id=\"unansweredModal\"", "id=\"difficultyFilter\"", "id=\"yearFilter\""
+              "function questionKey", "function uniqueQuestionStems", "function weightedPick",
+              "function resumeQuiz", "function updatePoolPreview", "function submitQuiz",
+              "function finishQuiz", "function renderReport", "function exportBackup",
+              "function importQuestionBank", "function saveMetadata", "function tickTimer",
+              "function getUnansweredIndexes", "exam-question-stats", "exam-active-session",
+              "navigator.serviceWorker.register", "id=\"unansweredModal\"",
+              "id=\"difficultyFilter\"", "id=\"yearFilter\""
           ):
               assert required in html, f"Missing expected interaction: {required}"
           for filename in ("manifest.webmanifest", "sw.js", "icon.svg"):
@@ -60,7 +63,7 @@ jobs:
           assert manifest["start_url"] == "./" and manifest["scope"] == "./", "PWA scope must work on project Pages"
           print("Validated questions:", len(questions))
           print("Subject counts:", dict(subjects))
-          print("Questions with explanations:", sum(bool(str(q.get("explanation", "")).strip()) for q in questions))
+          print("Questions with explanations:", explanations)
           print("All interaction and PWA file checks passed.")
           PY
           node --check /tmp/quiz-app.js
